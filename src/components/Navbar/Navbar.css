@@ -1,0 +1,19 @@
+nav {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 24px;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.search-input__block {
+  position: relative;
+  flex: 1;
+}
+
+.language-toggle {
+  flex-shrink: 0;
+}

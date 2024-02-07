@@ -1,0 +1,25 @@
+.language-toggle {
+  display: flex;
+  background-color: transparent;
+  border: 2px solid var(--secondary-color);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.language-toggle__item {
+  font-family: "InterBlack";
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  height: 100%;
+  transition: background-color .1s ease-in;
+}
+
+.language-toggle__item--active {
+  background-color: var(--secondary-color);
+}
+
+.language-toggle__item:hover {
+  background-color: var(--secondary-color-hover);
+  transition: background-color .1s ease-out;
+}

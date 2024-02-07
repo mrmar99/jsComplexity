@@ -1,13 +1,17 @@
 import React from "react";
-import { render } from "react-dom";
+import { createRoot } from "react-dom/client";
 import { App } from "./App";
-import reportWebVitals from "./reportWebVitals";
 import "./index.css";
+import "./fonts/Inter-Black.woff2";
+import "./fonts/Inter-ExtraBold.woff2";
+import "./fonts/Inter-Regular.woff2";
+import "./fonts/Inter-SemiBold.woff2";
+import "./fonts/JetBrainsMono-ExtraBold.woff2";
 
 const renderTarget = document.getElementById("app");
-render(<App />, renderTarget);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const root = createRoot(renderTarget);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);

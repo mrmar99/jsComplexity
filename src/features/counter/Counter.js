@@ -1,10 +1,10 @@
 import React from "react";
-import { useStore } from "effector-react";
+import { useUnit } from "effector-react";
 import { $counter, increment, decrement } from "./model";
 import "./Counter.css";
 
 export const Counter = ({className}) => {
-  const counter = useStore($counter);
+  const counter = useUnit($counter);
   const counterClasses = className ? `counter ${className}` : `counter`;
 
   return (

@@ -1,0 +1,28 @@
+input {
+  padding: 1rem 1rem 1rem 3rem;
+  background-color: transparent;
+  border: 2px solid var(--main-color);
+  border-radius: 8px;
+  color: var(--main-color);
+  font-size: 1.125rem;
+  height: 100%;
+  width: 100%;
+  transition: all .15s ease-in;
+}
+
+input:focus {
+  border-color: var(--secondary-color);
+  transition: all .15s ease-out;
+}
+
+input:focus + svg path {
+  fill: var(--secondary-color);
+  transition: all .15s ease-out;
+}
+
+svg {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  left: 1rem;
+}
