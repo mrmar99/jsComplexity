@@ -8,10 +8,9 @@ const DSItemLink = styled.a`
   cursor: pointer;
   margin-top: 1rem;
   width: 100%;
-  height: 70px;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
   border-radius: 12px;
   transition: background-color 0.2s ease-in;
   &:hover {
@@ -30,22 +29,12 @@ const DSItemTitle = styled.span`
   align-items: center;
 `;
 
-const DSItemComplexity = styled.div`
-  display: flex;
-  justify-content: center;
-  height: 100%;
-`;
-
 const DSItem = (props) => {
   return (
     <DSItemLink>
       <DSItemTitle>{props.title}</DSItemTitle>
-      <DSItemComplexity>
-        <Complexity title="O(log(n))" color="lightgreen" />
-      </DSItemComplexity>
-      <DSItemComplexity>
-        <Complexity title="O(1)" color="green" />
-      </DSItemComplexity>
+      <Complexity title="O(n log(n))" color="lightgreen" />
+      <Complexity title="O(1)" color="green" />
     </DSItemLink>
   );
 };

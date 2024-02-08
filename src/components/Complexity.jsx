@@ -5,12 +5,13 @@ const ComplexityBadge = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
   font-family: "JetBrainsMonoExtraBold";
   font-size: 1rem;
   color: var(--bg-color);
   border-radius: 8px;
-  width: 140px;
+  min-width: 140px;
+  height: 50px;
+  padding: 0 5px;
 
   ${({ $color }) =>
     $color ? `background-color: ${$color}` : `background-color: white`}

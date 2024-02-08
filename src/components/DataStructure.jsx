@@ -16,7 +16,7 @@ const DSTitle = styled.h2`
 const DSHead = styled.div`
   width: 100%;
   display: flex;
-  gap: 16px;
+  gap: 10px;
   padding-right: 5px;
   user-select: none;
 `;
@@ -30,6 +30,7 @@ const DSComplexity = styled.div`
   font-size: 2rem;
   text-align: center;
   width: 140px;
+  padding: 0 5px;
 `;
 
 const DataStructure = () => {
