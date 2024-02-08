@@ -1,6 +1,5 @@
 import React from "react";
-import { DSItem } from "../DSItem/DSItem";
-import "./DSItems.css";
+import { DSItem } from "./DSItem";
 
 export const DSItems = () => {
   return (

@@ -1,18 +1,16 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 16px;
+:root {
   --bg-color: #07080A;
   --description-bg-color: #0E0F12;
   --main-color: #F4F4F4;
   --secondary-color: #6179A8;
   --secondary-color-hover: #51699d;
-  --c-bg-green: #03A500;
-  --c-bg-lightgreen: #6ACC74;
-  --c-bg-limegreen: #97DE00;
-  --c-bg-orange: #F9A13B;
-  --c-bg-red: #DF513D;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
 body {
@@ -21,7 +19,19 @@ body {
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
   color: var(--main-color);
+}
+
+input {
+  outline: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--bg-color);
+  }
 }
 
 code {
