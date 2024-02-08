@@ -29,7 +29,7 @@ const LanguageItem = styled.div`
   }
 `;
 
-export const Language = () => {
+const Language = () => {
   return (
     <LanguageToggle>
       <LanguageItem $isActive={true}>en</LanguageItem>
@@ -37,3 +37,5 @@ export const Language = () => {
     </LanguageToggle>
   );
 };
+
+export default Language;

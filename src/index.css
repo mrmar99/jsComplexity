@@ -44,11 +44,6 @@ code {
   min-height: 100%;
 }
 
-.container {
-  width: 752px;
-  padding: 3rem 1rem;
-}
-
 @font-face {
   font-family: "InterBlack";
   src: local("InterBlack"),

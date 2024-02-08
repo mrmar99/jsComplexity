@@ -1,6 +1,6 @@
 import React from "react";
-import { Language } from "./Language";
-import { Search } from "./Search";
+import Language from "./Language";
+import Search from "./Search";
 import styled from "styled-components";
 import logo from "../svg/logo.svg";
 
@@ -17,7 +17,7 @@ const Logo = styled.img.attrs({
   flex-shrink: 0;
 `;
 
-export const Navbar = () => {
+const Navbar = () => {
   return (
     <Nav>
       <Logo />
@@ -26,3 +26,5 @@ export const Navbar = () => {
     </Nav>
   );
 };
+
+export default Navbar;

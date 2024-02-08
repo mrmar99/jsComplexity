@@ -10,13 +10,13 @@ const ComplexityBadge = styled.div`
   font-size: 1rem;
   color: var(--bg-color);
   border-radius: 8px;
-  width: 130px;
+  width: 140px;
 
   ${({ $color }) =>
     $color ? `background-color: ${$color}` : `background-color: white`}
 `;
 
-export const Complexity = (props) => {
+const Complexity = (props) => {
   const validColors = {
     green: "#03A500",
     lightgreen: "#6ACC74",
@@ -31,3 +31,5 @@ export const Complexity = (props) => {
     </ComplexityBadge>
   );
 };
+
+export default Complexity;

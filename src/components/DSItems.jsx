@@ -1,7 +1,7 @@
 import React from "react";
-import { DSItem } from "./DSItem";
+import DSItem from "./DSItem";
 
-export const DSItems = () => {
+const DSItems = () => {
   return (
     <div className="ds-items">
       <DSItem title="sort()" />
@@ -13,3 +13,5 @@ export const DSItems = () => {
     </div>
   );
 };
+
+export default DSItems;

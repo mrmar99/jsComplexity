@@ -33,7 +33,7 @@ const SearchSvg = styled.svg`
   left: 1rem;
 `;
 
-export const Search = () => {
+const Search = () => {
   return (
     <SearchBar>
       <SearchInput />
@@ -64,3 +64,5 @@ export const Search = () => {
     </SearchBar>
   );
 };
+
+export default Search;

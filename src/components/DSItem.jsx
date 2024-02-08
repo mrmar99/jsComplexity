@@ -1,10 +1,10 @@
 import React from "react";
-import { Complexity } from "./Complexity";
+import Complexity from "./Complexity";
 import styled from "styled-components";
 
 const DSItemLink = styled.a`
   user-select: none;
-  padding: 10px 20px;
+  padding: 10px 10px 10px 20px;
   cursor: pointer;
   margin-top: 1rem;
   width: 100%;
@@ -12,7 +12,7 @@ const DSItemLink = styled.a`
   display: flex;
   align-items: center;
   gap: 16px;
-  border-radius: 8px;
+  border-radius: 12px;
   transition: background-color 0.2s ease-in;
   &:hover {
     background-color: var(--description-bg-color);
@@ -36,7 +36,7 @@ const DSItemComplexity = styled.div`
   height: 100%;
 `;
 
-export const DSItem = (props) => {
+const DSItem = (props) => {
   return (
     <DSItemLink>
       <DSItemTitle>{props.title}</DSItemTitle>
@@ -49,3 +49,5 @@ export const DSItem = (props) => {
     </DSItemLink>
   );
 };
+
+export default DSItem;

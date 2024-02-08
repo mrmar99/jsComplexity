@@ -1,7 +1,7 @@
 import React from "react";
-import { DSItems } from "./DSItems";
+import DSItems from "./DSItems";
 import styled from "styled-components";
-import tooltipSvg from "../svg/fi-br-interrogation.svg";
+import tooltipSvg from "../svg/tooltip.svg";
 
 const DSSection = styled.section`
   margin-top: 3.5rem;
@@ -17,7 +17,7 @@ const DSHead = styled.div`
   width: 100%;
   display: flex;
   gap: 16px;
-  padding-right: 10px;
+  padding-right: 5px;
   user-select: none;
 `;
 
@@ -29,10 +29,10 @@ const DSComplexity = styled.div`
   font-family: "InterRegular";
   font-size: 2rem;
   text-align: center;
-  width: 130px;
+  width: 140px;
 `;
 
-export const DataStructure = () => {
+const DataStructure = () => {
   return (
     <DSSection>
       <DSTitle>Array</DSTitle>
@@ -55,3 +55,5 @@ export const DataStructure = () => {
     </DSSection>
   );
 };
+
+export default DataStructure;
