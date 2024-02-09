@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import $store, { changeSearchInput } from "../store";
+import { useUnit } from "effector-react";
 
 const SearchBar = styled.div`
   position: relative;
@@ -34,9 +36,15 @@ const SearchSvg = styled.svg`
 `;
 
 const Search = () => {
+  const { searchInputValue } = useUnit($store);
+
+  const onChange = ({ target }) => {
+    changeSearchInput(target.value);
+  }
+
   return (
     <SearchBar>
-      <SearchInput />
+      <SearchInput value={searchInputValue} onChange={onChange} />
       <SearchSvg
         width="24"
         height="25"

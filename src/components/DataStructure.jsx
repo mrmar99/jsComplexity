@@ -2,6 +2,8 @@ import React from "react";
 import DSItems from "./DSItems";
 import styled from "styled-components";
 import tooltipSvg from "../svg/tooltip.svg";
+import $store from "../store";
+import { useUnit } from "effector-react";
 
 const DSSection = styled.section`
   margin-top: 3.5rem;
@@ -35,6 +37,11 @@ const DSComplexity = styled.div`
 
 const DataStructure = (props) => {
   const { title, dataStructures } = props;
+  const items = dataStructures[title.toLowerCase()];
+  const { searchInputValue } = useUnit($store);
+  const filteredItems = Object.values(items).filter((item) =>
+    item.title.toLowerCase().includes(searchInputValue.toLowerCase())
+  );
 
   return (
     <DSSection>
@@ -54,7 +61,7 @@ const DataStructure = (props) => {
           </sup>
         </DSComplexity>
       </DSHead>
-      <DSItems items={dataStructures[title.toLowerCase()]} />
+      <DSItems items={filteredItems} />
     </DSSection>
   );
 };

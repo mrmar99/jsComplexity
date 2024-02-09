@@ -5,7 +5,7 @@ import Spinner from "../components/Spinner";
 
 const Home = (props) => {
   const { store } = props;
-  const { items, language } = store;
+  const { items, language, searchInputValue } = store;
   const dataStructures = items[language];
   const [loading, setLoading] = useState(true);
 
@@ -13,17 +13,19 @@ const Home = (props) => {
     if (Object.keys(items).length) {
       setLoading(false);
     }
-  }, [items, language]);
+  }, [items, language, searchInputValue]);
 
   return (
     <>
       <Navbar type="home" />
       {
         dataStructures && Object.keys(dataStructures).map((ds) => {
+          const title = ds.charAt(0).toUpperCase() + ds.slice(1);
+
           return (
             <DataStructure 
               key={ds}
-              title={ds.charAt(0).toUpperCase() + ds.slice(1)} 
+              title={title} 
               dataStructures={dataStructures}
             />
           )

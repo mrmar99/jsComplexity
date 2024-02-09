@@ -47,7 +47,6 @@ const LeftArrow = styled.img.attrs({
 })``;
 
 const Navbar = (props) => {
-  console.log(props);
   return (
     <Nav type={props.type}>
       {props.type === "item" && (

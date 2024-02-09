@@ -39,14 +39,20 @@ export const fetchItems = createEffect(async () => {
 
 
 export const changeLanguage = createEvent();
+export const changeSearchInput = createEvent();
 
 export default createStore({
   items: {},
-  language: "ru"
+  language: "ru",
+  searchInputValue: ""
 })
   .on(changeLanguage, (store, payload) => ({
     ...store,
     language: payload,
+  }))
+  .on(changeSearchInput, (store, payload) => ({
+    ...store,
+    searchInputValue: payload,
   }))
   .on(fetchItems.done, (store, { result }) => ({
     ...store,
