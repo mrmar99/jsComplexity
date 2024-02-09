@@ -6,6 +6,7 @@ import { fetchItems } from "../store";
 import Spinner from "../components/Spinner";
 import styled from "styled-components";
 import Complexity from "../components/Complexity";
+import ComplexityTooltip from "../components/ComplexityTooltip";
 
 const ItemTitle = styled.h1`
   font-family: "InterExtraBold";
@@ -104,12 +105,16 @@ const ItemDescription = (props) => {
           <HeaderBlock>
             <ItemTitle>{title}</ItemTitle>
             <Complexities>
-              <ComplexityBlock>
-                <span>TC</span> <Complexity title={tc} color={tcColor} />
-              </ComplexityBlock>
-              <ComplexityBlock>
-                <span>SC</span> <Complexity title={sc} color={scColor} />
-              </ComplexityBlock>
+              <ComplexityTooltip type="tc">
+                <ComplexityBlock>
+                  <span>TC</span> <Complexity title={tc} color={tcColor} />
+                </ComplexityBlock>
+              </ComplexityTooltip>
+              <ComplexityTooltip type="sc">
+                <ComplexityBlock>
+                  <span>SC</span> <Complexity title={sc} color={scColor} />
+                </ComplexityBlock>
+              </ComplexityTooltip>
             </Complexities>
           </HeaderBlock>
           <MarkdownBlock>

@@ -4,6 +4,7 @@ import styled from "styled-components";
 import tooltipSvg from "../svg/tooltip.svg";
 import $store from "../store";
 import { useUnit } from "effector-react";
+import ComplexityTooltip from "./ComplexityTooltip";
 
 const DSSection = styled.section`
   margin-top: 3.5rem;
@@ -29,10 +30,13 @@ const DSHeadTitleDummy = styled.div`
 
 const DSComplexity = styled.div`
   font-family: "InterRegular";
-  font-size: 2rem;
   text-align: center;
   width: 140px;
   padding: 0 5px;
+
+  span {
+    font-size: 2rem;
+  }
 `;
 
 const DataStructure = (props) => {
@@ -48,18 +52,22 @@ const DataStructure = (props) => {
       <DSTitle>{title}</DSTitle>
       <DSHead>
         <DSHeadTitleDummy />
-        <DSComplexity>
-          tc
-          <sup>
-            <img src={tooltipSvg} alt="tooltipSvg" />
-          </sup>
-        </DSComplexity>
-        <DSComplexity>
-          sc
-          <sup>
-            <img src={tooltipSvg} alt="tooltipSvg" />
-          </sup>
-        </DSComplexity>
+        <ComplexityTooltip type="tc">
+          <DSComplexity>
+            <span>tc</span>
+            <sup>
+              <img src={tooltipSvg} alt="tooltipSvg" />
+            </sup>
+          </DSComplexity>
+        </ComplexityTooltip>
+        <ComplexityTooltip type="sc">
+          <DSComplexity>
+            <span>sc</span>
+            <sup>
+              <img src={tooltipSvg} alt="tooltipSvg" />
+            </sup>
+          </DSComplexity>
+        </ComplexityTooltip>
       </DSHead>
       <DSItems items={filteredItems} />
     </DSSection>
