@@ -19,6 +19,11 @@ const DSItemLink = styled(Link)`
     background-color: var(--description-bg-color);
     transition: background-color 0.2s ease-out;
   }
+
+  @media (max-width: 780px) {
+    padding: 5px;
+    margin-top: 0.5rem;
+  }
 `;
 
 const DSItemTitle = styled.span`
@@ -29,6 +34,10 @@ const DSItemTitle = styled.span`
   height: 100%;
   display: inline-flex;
   align-items: center;
+
+  @media (max-width: 780px) {
+    font-size: 0.9rem;
+  }
 `;
 
 const DSItem = (props) => {

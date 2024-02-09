@@ -8,12 +8,20 @@ import ComplexityTooltip from "./ComplexityTooltip";
 
 const DSSection = styled.section`
   margin-top: 3.5rem;
+
+  @media (max-width: 780px) {
+    margin-top: 2.5rem;
+  }
 `;
 
 const DSTitle = styled.h2`
   font-family: "InterExtraBold";
   font-size: 3rem;
   margin-bottom: 1.5rem;
+
+  @media (max-width: 780px) {
+    font-size: 2rem;
+  }
 `;
 
 const DSHead = styled.div`
@@ -36,6 +44,14 @@ const DSComplexity = styled.div`
 
   span {
     font-size: 2rem;
+  }
+
+  @media (max-width: 780px) {
+    width: 100px;
+
+    span {
+      font-size: 1.5rem;
+    }
   }
 `;
 

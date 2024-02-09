@@ -13,6 +13,12 @@ const ComplexityBadge = styled.div`
   height: 50px;
   padding: 0 5px;
 
+  @media (max-width: 780px) {
+    height: 35px;
+    font-size: 0.75rem;
+    min-width: 100px;
+  }
+
   ${({ $color }) =>
     $color ? `background-color: ${$color}` : `background-color: white`}
 `;

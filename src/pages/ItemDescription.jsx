@@ -12,6 +12,10 @@ const ItemTitle = styled.h1`
   font-family: "InterExtraBold";
   font-size: 3rem;
   margin-bottom: 0.5rem;
+
+  @media (max-width: 780px) {
+    font-size: 2rem;
+  }
 `;
 
 const MarkdownBlock = styled.div`
@@ -27,7 +31,7 @@ const MarkdownBlock = styled.div`
 
   code {
     font-family: "InterSemiBold";
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: var(--main-color);
     border: 1px solid var(--main-color);
     background-color: var(--description-bg-color);
@@ -52,6 +56,10 @@ const HeaderBlock = styled.div`
   user-select: none;
   align-items: flex-start;
   gap: 1rem;
+
+  @media (max-width: 780px) {
+    margin-top: 2.5rem;
+  }
 `;
 
 const Complexities = styled.div`

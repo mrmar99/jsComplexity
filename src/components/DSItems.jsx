@@ -13,7 +13,6 @@ const EmptyItemsList = styled.div`
 const DSItems = (props) => {
   const { items } = props;
   items.sort((a, b) => a.title.localeCompare(b.title));
-  console.log(items)
 
   return (
     <>

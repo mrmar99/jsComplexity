@@ -30,7 +30,7 @@ const SearchInput = styled.input`
 
 const SearchSvg = styled.svg`
   position: absolute;
-  top:50%;
+  top: 50%;
   transform: translateY(-50%);
   left: 1rem;
 `;

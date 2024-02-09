@@ -18,11 +18,19 @@ const LogoBlock = styled(Link)`
   position: ${({ type }) => type === "item" && "absolute"};
   left: ${({ type }) => type === "item" && "50%"};
   transform: ${({ type }) => type === "item" && "translateX(-50%)"};
+
+  @media (max-width: 780px) {
+    display: none;
+  }
 `;
 
 const Logo = styled.img.attrs({
   src: `${logo}`,
-})``;
+})`
+  @media (max-width: 780px) {
+    width: 0;
+  }
+`;
 
 const LeftArrowBlock = styled(Link)`
   display: flex;
