@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useUnit } from "effector-react";
-import $store from "../store";
+import $store, { changeLanguage } from "../store";
 
 const LanguageToggle = styled.div`
   flex-shrink: 0;
@@ -20,9 +20,8 @@ const LanguageItem = styled.div`
   padding: 0 12px;
   height: 100%;
   transition: background-color 0.1s ease-in;
-  background-color: ${({ $isActive }) => 
-    $isActive ? "var(--secondary-color)" : "transparent"
-  };
+  background-color: ${({ $isActive }) =>
+    $isActive ? "var(--secondary-color)" : "transparent"};
 
   &:hover {
     background-color: var(--secondary-color-hover);
@@ -33,10 +32,18 @@ const LanguageItem = styled.div`
 const Language = () => {
   const { language } = useUnit($store);
 
+  const onClick = (lang) => {
+    changeLanguage(lang);
+  };
+
   return (
     <LanguageToggle>
-      <LanguageItem $isActive={language === 'ru'}>ru</LanguageItem>
-      <LanguageItem $isActive={language === 'en'}>en</LanguageItem>
+      <LanguageItem onClick={() => onClick("ru")} $isActive={language === "ru"}>
+        ru
+      </LanguageItem>
+      <LanguageItem onClick={() => onClick("en")} $isActive={language === "en"}>
+        en
+      </LanguageItem>
     </LanguageToggle>
   );
 };

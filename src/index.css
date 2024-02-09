@@ -22,16 +22,11 @@ body {
   display: flex;
   justify-content: center;
   color: var(--main-color);
+  background-color: var(--bg-color);
 }
 
 input {
   outline: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--bg-color);
-  }
 }
 
 code {

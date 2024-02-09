@@ -4,6 +4,73 @@ import { useParams } from "react-router-dom";
 import Markdown from "markdown-to-jsx";
 import { fetchItems } from "../store";
 import Spinner from "../components/Spinner";
+import styled from "styled-components";
+import Complexity from "../components/Complexity";
+
+const ItemTitle = styled.h1`
+  font-family: "InterExtraBold";
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+`;
+
+const MarkdownBlock = styled.div`
+  font-family: "InterRegular";
+  letter-spacing: 0.5px;
+  width: 100%;
+  line-height: 1.8;
+  text-align: justify;
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  code {
+    font-family: "InterSemiBold";
+    font-size: 1.1rem;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    background-color: var(--description-bg-color);
+    padding: 3px 6px;
+    border-radius: 4px;
+  }
+
+  & * {
+    margin-top: 0.35rem;
+  }
+
+  & *:first-child {
+    margin-top: 0;
+  }
+`;
+
+const HeaderBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.5rem;
+  margin-bottom: 2rem;
+  user-select: none;
+  align-items: flex-start;
+  gap: 1rem;
+`;
+
+const Complexities = styled.div`
+  display: flex;
+  gap: 1rem;
+`;
+
+const ComplexityBlock = styled.div`
+  display: flex;
+  align-items: center;
+  background-color: var(--description-bg-color);
+  border-radius: 12px;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+
+  span {
+    font-family: "InterRegular";
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+`;
 
 const ItemDescription = (props) => {
   const { ds, itemid } = useParams();
@@ -25,17 +92,29 @@ const ItemDescription = (props) => {
       setItem(item);
       setLoading(false);
     }
-  }, [items]);
+  }, [items, language, ds, itemid]);
 
   const { title, content, tc, tcColor, sc, scColor } = item;
 
   return (
     <>
-      <Navbar />
+      <Navbar type="item" />
       {Object.keys(item).length ? (
         <>
-          <h1>{title}</h1>
-          <Markdown>{content}</Markdown>
+          <HeaderBlock>
+            <ItemTitle>{title}</ItemTitle>
+            <Complexities>
+              <ComplexityBlock>
+                <span>TC</span> <Complexity title={tc} color={tcColor} />
+              </ComplexityBlock>
+              <ComplexityBlock>
+                <span>SC</span> <Complexity title={sc} color={scColor} />
+              </ComplexityBlock>
+            </Complexities>
+          </HeaderBlock>
+          <MarkdownBlock>
+            <Markdown>{content}</Markdown>
+          </MarkdownBlock>
         </>
       ) : (
         <></>

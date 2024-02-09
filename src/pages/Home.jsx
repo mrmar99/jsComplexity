@@ -13,11 +13,11 @@ const Home = (props) => {
     if (Object.keys(items).length) {
       setLoading(false);
     }
-  }, [items]);
+  }, [items, language]);
 
   return (
     <>
-      <Navbar />
+      <Navbar type="home" />
       {
         dataStructures && Object.keys(dataStructures).map((ds) => {
           return (

@@ -4,25 +4,61 @@ import Search from "./Search";
 import styled from "styled-components";
 import logo from "../svg/logo.svg";
 import { Link } from "react-router-dom";
+import leftArrowSvg from "../svg/leftArrow.svg";
 
 const Nav = styled.nav`
   height: 50px;
   display: flex;
   justify-content: space-between;
-  column-gap: 24px;
+  column-gap: ${({ type }) => type === "home" && "24px"};
+`;
+
+const LogoBlock = styled(Link)`
+  flex-shrink: ${({ type }) => type === "home" && "0"};
+  position: ${({ type }) => type === "item" && "absolute"};
+  left: ${({ type }) => type === "item" && "50%"};
+  transform: ${({ type }) => type === "item" && "translateX(-50%)"};
 `;
 
 const Logo = styled.img.attrs({
-  src: `${logo}`
-})`
-  flex-shrink: 0;
+  src: `${logo}`,
+})``;
+
+const LeftArrowBlock = styled(Link)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: var(--description-bg-color);
+  border: 2px solid var(--secondary-color);
+  padding: 12px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color .2s ease-in;
+
+  &:hover {
+    background-color: transparent;
+    transition: background-color .2s ease-out;
+  }
 `;
 
-const Navbar = () => {
+const LeftArrow = styled.img.attrs({
+  src: `${leftArrowSvg}`,
+})``;
+
+const Navbar = (props) => {
+  console.log(props);
   return (
-    <Nav>
-      <Link to="/"><Logo /></Link>
-      <Search />
+    <Nav type={props.type}>
+      {props.type === "item" && (
+        <LeftArrowBlock to="/">
+          <LeftArrow />
+        </LeftArrowBlock>
+      )}
+      <LogoBlock type={props.type} to="/">
+        <Logo type={props.type} />
+      </LogoBlock>
+      {props.type === "home" && <Search />}
       <Language />
     </Nav>
   );
