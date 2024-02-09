@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
-import { SyncLoader } from "react-spinners";
 import { useParams } from "react-router-dom";
 import Markdown from "markdown-to-jsx";
 import { fetchItems } from "../store";
+import Spinner from "../components/Spinner";
 
 const ItemDescription = (props) => {
   const { ds, itemid } = useParams();
@@ -11,7 +11,6 @@ const ItemDescription = (props) => {
   const { items, language } = store;
   const [loading, setLoading] = useState(true);
   const [item, setItem] = useState({});
-  console.log("eblan?", store, items);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -33,11 +32,6 @@ const ItemDescription = (props) => {
   return (
     <>
       <Navbar />
-      <SyncLoader
-        color="white"
-        loading={loading}
-        aria-label="Loading Spinner"
-      />
       {Object.keys(item).length ? (
         <>
           <h1>{title}</h1>
@@ -46,6 +40,7 @@ const ItemDescription = (props) => {
       ) : (
         <></>
       )}
+      <Spinner loading={loading} />
     </>
   );
 };

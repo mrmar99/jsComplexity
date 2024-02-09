@@ -20,11 +20,9 @@ const LanguageItem = styled.div`
   padding: 0 12px;
   height: 100%;
   transition: background-color 0.1s ease-in;
-
-  ${({ $isActive }) =>
-    $isActive
-      ? `background-color: var(--secondary-color);`
-      : `background-color: transparent;`}
+  background-color: ${({ $isActive }) => 
+    $isActive ? "var(--secondary-color)" : "transparent"
+  };
 
   &:hover {
     background-color: var(--secondary-color-hover);
