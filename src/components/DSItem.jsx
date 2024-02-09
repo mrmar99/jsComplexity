@@ -1,8 +1,10 @@
 import React from "react";
 import Complexity from "./Complexity";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-const DSItemLink = styled.a`
+const DSItemLink = styled(Link)`
+  text-decoration: none;
   user-select: none;
   padding: 10px 10px 10px 20px;
   cursor: pointer;
@@ -30,11 +32,14 @@ const DSItemTitle = styled.span`
 `;
 
 const DSItem = (props) => {
+  const { title, item } = props;
+  const { slug, tc, tcColor, sc, scColor } = item;
+
   return (
-    <DSItemLink>
-      <DSItemTitle>{props.title}</DSItemTitle>
-      <Complexity title="O(n log(n))" color="lightgreen" />
-      <Complexity title="O(1)" color="green" />
+    <DSItemLink to={slug}>
+      <DSItemTitle>{title}</DSItemTitle>
+      <Complexity title={tc} color={tcColor} />
+      <Complexity title={sc} color={scColor} />
     </DSItemLink>
   );
 };

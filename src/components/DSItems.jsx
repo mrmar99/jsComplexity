@@ -1,16 +1,18 @@
 import React from "react";
 import DSItem from "./DSItem";
 
-const DSItems = () => {
+const DSItems = (props) => {
+  const { items } = props;
   return (
-    <div className="ds-items">
-      <DSItem title="sort()" />
-      <DSItem title="toLocaleString()" />
-      <DSItem title="findLastIndex()" />
-      <DSItem title="join()" />
-      <DSItem title="lastIndexOf()" />
-      <DSItem title="reduceRight()" />
-    </div>
+    <>
+      {
+        Object.entries(items).map(([slug, item]) => {
+          return (
+            <DSItem key={slug} title={item.title} item={item} />
+          )
+        })
+      }
+    </>
   );
 };
 

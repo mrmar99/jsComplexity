@@ -33,10 +33,12 @@ const DSComplexity = styled.div`
   padding: 0 5px;
 `;
 
-const DataStructure = () => {
+const DataStructure = (props) => {
+  const { title, dataStructures } = props;
+
   return (
     <DSSection>
-      <DSTitle>Array</DSTitle>
+      <DSTitle>{title}</DSTitle>
       <DSHead>
         <DSHeadTitleDummy />
         <DSComplexity>
@@ -52,7 +54,7 @@ const DataStructure = () => {
           </sup>
         </DSComplexity>
       </DSHead>
-      <DSItems />
+      <DSItems items={dataStructures[title.toLowerCase()]} />
     </DSSection>
   );
 };

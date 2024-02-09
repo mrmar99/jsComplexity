@@ -1,3 +1,4 @@
+import { attachReduxDevTools } from "@effector/redux-devtools-adapter";
 import React from "react";
 import App from "./App";
 import { createRoot } from "react-dom/client";
@@ -7,6 +8,10 @@ import "./fonts/Inter-ExtraBold.woff2";
 import "./fonts/Inter-Regular.woff2";
 import "./fonts/Inter-SemiBold.woff2";
 import "./fonts/JetBrainsMono-ExtraBold.woff2";
+
+attachReduxDevTools({
+  trace: true
+});
 
 const renderTarget = document.getElementById("app");
 const root = createRoot(renderTarget);

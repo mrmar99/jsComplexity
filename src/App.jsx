@@ -1,15 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Home from "./pages/Home";
-import ItemPage from "./pages/ItemPage";
+import ItemDescription from "./pages/ItemDescription";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Container from "./components/Container";
-
-const router = createBrowserRouter([
-  { path: "/", element: <Home /> },
-  { path: "/:itemid", element: <ItemPage /> }
-]);
+import { fetchItems } from "./store";
+import { useUnit } from "effector-react";
+import $store from "./store";
 
 const App = () => {
+  const [store] = useUnit([$store, fetchItems.done]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      await fetchItems();
+    };
+  
+    fetchData();
+  }, []);
+
+  const router = createBrowserRouter([
+    { path: "/", element: <Home store={store} /> },
+    { path: "/:ds/:itemid", element: <ItemDescription store={store} /> },
+  ]);
+
   return (
     <Container>
       <RouterProvider router={router} />

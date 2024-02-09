@@ -3,6 +3,7 @@ import Language from "./Language";
 import Search from "./Search";
 import styled from "styled-components";
 import logo from "../svg/logo.svg";
+import { Link } from "react-router-dom";
 
 const Nav = styled.nav`
   height: 50px;
@@ -20,7 +21,7 @@ const Logo = styled.img.attrs({
 const Navbar = () => {
   return (
     <Nav>
-      <Logo />
+      <Link to="/"><Logo /></Link>
       <Search />
       <Language />
     </Nav>

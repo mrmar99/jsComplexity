@@ -1,15 +1,26 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import DataStructure from "../components/DataStructure";
-import { Counter } from "../features/counter";
 
-const Home = () => {
+const Home = (props) => {
+  const { store } = props;
+  const { items, language } = store;
+  const dataStructures = items[language];
+
   return (
     <>
       <Navbar />
-      <DataStructure />
-      <DataStructure />
-      <DataStructure />
+      {
+        dataStructures && Object.keys(dataStructures).map((ds) => {
+          return (
+            <DataStructure 
+              key={ds}
+              title={ds.charAt(0).toUpperCase() + ds.slice(1)} 
+              dataStructures={dataStructures}
+            />
+          )
+        })
+      }
     </>
   );
 };

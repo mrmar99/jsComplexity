@@ -1,0 +1,38 @@
+{
+  "en": {
+    "array": {
+      "mdfiles": [
+        "en/array/findLastIndex.md",
+        "en/array/join.md",
+        "en/array/lastIndexOf.md",
+        "en/array/reduceRight.md",
+        "en/array/sort.md",
+        "en/array/toLocaleString.md"
+      ]
+    },
+    "string": {
+      "mdfiles": [
+        "en/string/slice.md",
+        "en/string/split.md"
+      ]
+    }
+  },
+  "ru": {
+    "array": {
+      "mdfiles": [
+        "ru/array/findLastIndex.md",
+        "ru/array/join.md",
+        "ru/array/lastIndexOf.md",
+        "ru/array/reduceRight.md",
+        "ru/array/sort.md",
+        "ru/array/toLocaleString.md"
+      ]
+    },
+    "string": {
+      "mdfiles": [
+        "ru/string/slice.md",
+        "ru/string/split.md"
+      ]
+    }
+  }
+}
