@@ -1,6 +1,6 @@
 import React from "react";
+import App from "./App";
 import { createRoot } from "react-dom/client";
-import { App } from "./App";
 import "./index.css";
 import "./fonts/Inter-Black.woff2";
 import "./fonts/Inter-ExtraBold.woff2";
