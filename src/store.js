@@ -16,7 +16,7 @@ export const fetchItems = createEffect(async () => {
           const res = await fetch(module.default);
           const mdData = await res.text();
           const { content, metadata } = parseMD(mdData);
-          const { title, slug, tc, tcColor, sc, scColor } = metadata;
+          const { title, slug, tc, tcColor, sc, scColor, deprecated } = metadata;
           mds[lang][ds][slug] = {
             title,
             content,
@@ -25,6 +25,7 @@ export const fetchItems = createEffect(async () => {
             tcColor,
             sc,
             scColor,
+            deprecated
           };
         }));
       }

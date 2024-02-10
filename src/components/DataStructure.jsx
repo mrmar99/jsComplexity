@@ -30,6 +30,10 @@ const DSHead = styled.div`
   gap: 10px;
   padding-right: 5px;
   user-select: none;
+
+  @media (max-width: 780px) {
+    gap: 5px;
+  }
 `;
 
 const DSHeadTitleDummy = styled.div`
@@ -47,7 +51,7 @@ const DSComplexity = styled.div`
   }
 
   @media (max-width: 780px) {
-    width: 100px;
+    width: 90px;
 
     span {
       font-size: 1.5rem;

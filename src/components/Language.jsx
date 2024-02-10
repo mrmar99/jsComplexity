@@ -7,7 +7,7 @@ const LanguageToggle = styled.div`
   flex-shrink: 0;
   display: flex;
   background-color: transparent;
-  border: 2px solid var(--secondary-color);
+  border: 3px solid var(--secondary-color);
   border-radius: 8px;
   cursor: pointer;
 `;

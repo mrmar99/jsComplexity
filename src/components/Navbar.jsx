@@ -38,8 +38,8 @@ const LeftArrowBlock = styled(Link)`
   justify-content: center;
   height: 50px;
   background-color: var(--description-bg-color);
-  border: 2px solid var(--secondary-color);
-  padding: 12px 14px;
+  border: 3px solid var(--secondary-color);
+  padding: 12px 14px 12px 12px;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color .2s ease-in;

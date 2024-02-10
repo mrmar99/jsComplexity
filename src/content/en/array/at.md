@@ -1,9 +1,9 @@
 ---
 title: at()
 slug: array/at
-tc: O(n log(n))
-tcColor: red
-sc: O(n log(n))
-scColor: orange
+tc: O(1)
+tcColor: green
+sc: O(1)
+scColor: green
 ---
 Hi :) It's `at`.

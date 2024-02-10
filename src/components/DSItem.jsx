@@ -2,6 +2,7 @@ import React from "react";
 import Complexity from "./Complexity";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import trashSvg from "../svg/trash.svg";
 
 const DSItemLink = styled(Link)`
   text-decoration: none;
@@ -23,6 +24,7 @@ const DSItemLink = styled(Link)`
   @media (max-width: 780px) {
     padding: 5px;
     margin-top: 0.5rem;
+    gap: 5px;
   }
 `;
 
@@ -36,17 +38,31 @@ const DSItemTitle = styled.span`
   align-items: center;
 
   @media (max-width: 780px) {
-    font-size: 0.9rem;
+    font-family: "InterBlack";
+    font-size: 0.8rem;
+  }
+`;
+
+const TrashSvg = styled.img.attrs({
+  src: `${trashSvg}`
+})`
+  margin-top: 5px;
+  margin-left: 0.6rem;
+
+  @media (max-width: 780px) {
+    margin-top: 2px;
+    margin-left: 0.3rem;
+    width: 1rem;
   }
 `;
 
 const DSItem = (props) => {
   const { title, item } = props;
-  const { slug, tc, tcColor, sc, scColor } = item;
+  const { slug, tc, tcColor, sc, scColor, deprecated } = item;
 
   return (
     <DSItemLink to={slug}>
-      <DSItemTitle>{title}</DSItemTitle>
+      <DSItemTitle>{title} {deprecated && <TrashSvg />}</DSItemTitle>
       <Complexity title={tc} color={tcColor} />
       <Complexity title={sc} color={scColor} />
     </DSItemLink>

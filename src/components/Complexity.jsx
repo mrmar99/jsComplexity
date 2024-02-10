@@ -15,8 +15,8 @@ const ComplexityBadge = styled.div`
 
   @media (max-width: 780px) {
     height: 35px;
-    font-size: 0.75rem;
-    min-width: 100px;
+    font-size: 0.7rem;
+    min-width: 90px;
   }
 
   ${({ $color }) =>

@@ -7,14 +7,21 @@ import Spinner from "../components/Spinner";
 import styled from "styled-components";
 import Complexity from "../components/Complexity";
 import ComplexityTooltip from "../components/ComplexityTooltip";
+import Deprecated from "../components/Deprecated";
+
+const ItemTitleBlock = styled.div`
+  margin-bottom: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+`;
 
 const ItemTitle = styled.h1`
   font-family: "InterExtraBold";
   font-size: 3rem;
-  margin-bottom: 0.5rem;
 
   @media (max-width: 780px) {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 `;
 
@@ -103,7 +110,7 @@ const ItemDescription = (props) => {
     }
   }, [items, language, ds, itemid]);
 
-  const { title, content, tc, tcColor, sc, scColor } = item;
+  const { title, content, tc, tcColor, sc, scColor, deprecated } = item;
 
   return (
     <>
@@ -111,7 +118,12 @@ const ItemDescription = (props) => {
       {Object.keys(item).length ? (
         <>
           <HeaderBlock>
-            <ItemTitle>{title}</ItemTitle>
+            <ItemTitleBlock>
+              <ItemTitle>
+                {title}
+              </ItemTitle>
+              { deprecated && <Deprecated /> }
+            </ItemTitleBlock>
             <Complexities>
               <ComplexityTooltip type="tc">
                 <ComplexityBlock>
