@@ -1,1 +1,1 @@
-Hi :) It's `Array.from `_method_.
+Hi :) It's `Array.from` _method_.
