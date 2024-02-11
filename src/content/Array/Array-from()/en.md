@@ -1,1 +1,1 @@
-Hi :) It's `Array.from dasda`.
+Hi :) It's `Array.from `_method_.
