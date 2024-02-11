@@ -6,6 +6,7 @@ import styled from "styled-components";
 import Complexity from "../components/Complexity";
 import ComplexityTooltip from "../components/ComplexityTooltip";
 import Deprecated from "../components/Deprecated";
+import githubSvg from "../svg/github.svg";
 import { useUnit } from "effector-react";
 import $store from "../store";
 
@@ -88,6 +89,23 @@ const ComplexityBlock = styled.div`
   }
 `;
 
+const GithubIcon = styled.img.attrs({
+  src: `${githubSvg}`
+})`
+  width: 24px;
+`;
+
+const GithubLink = styled.a`
+  margin-top: 1.5rem;
+  display: flex;
+  gap: .75rem;
+  background-color: var(--description-bg-color);
+  width: max-content;
+  padding: .75rem;
+  border-radius: 8px;
+  color: var(--main-color);
+`;
+
 const ItemDescription = () => {
   const { ds, itemid } = useParams();
   const store = useUnit($store);
@@ -95,6 +113,13 @@ const ItemDescription = () => {
   const item = items[language][ds][`${ds}/${itemid}`];
 
   const { title, content, tc, tcColor, sc, scColor, deprecated } = item;
+
+  const capitalizedDs = ds.charAt(0).toUpperCase() + ds.slice(1);
+  const linkToGithub = `https://github.com/mrmar99/jsComplexity/edit/master/src/content/${capitalizedDs}/${title.replaceAll('.', '-')}/${language}.md`;
+  const editOnGithubText = {
+    ru: "Редактировать на GitHub",
+    en: "Edit on GitHub"
+  };
 
   return (
     <>
@@ -124,6 +149,10 @@ const ItemDescription = () => {
           <MarkdownBlock>
             <Markdown>{content}</Markdown>
           </MarkdownBlock>
+          <GithubLink href={linkToGithub} target="_blank">
+            <GithubIcon />
+            {editOnGithubText[language]}
+          </GithubLink>
         </>
       ) : (
         <></>
