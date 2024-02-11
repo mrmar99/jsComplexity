@@ -1,8 +1,6 @@
 import { createStore, createEvent } from "effector";
 import contentData from "./content/data.json";
 
-console.log(navigator.language)
-
 export const changeItems = createEvent();
 export const changeLanguage = createEvent();
 export const changeSearchInput = createEvent();
