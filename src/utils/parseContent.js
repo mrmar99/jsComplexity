@@ -39,7 +39,7 @@ const filePaths = parseFilePaths(dirPath);
 
 const result = {};
 for (const filePath of filePaths) {
-  const { language, relativePath, path, ext } = filePath;
+  const { language, relativePath, path } = filePath;
 
   const dirs = relativePath.split("/");
   const title = dirs.at(-2);
