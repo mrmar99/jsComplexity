@@ -98,6 +98,7 @@ const GithubIcon = styled.img.attrs({
 const GithubLink = styled.a`
   margin-top: 1.5rem;
   display: flex;
+  align-items: center;
   gap: .75rem;
   background-color: var(--description-bg-color);
   width: max-content;
