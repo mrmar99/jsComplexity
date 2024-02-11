@@ -20,11 +20,15 @@ body {
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: flex;
-  justify-content: center;
   color: var(--main-color);
   background-color: var(--bg-color);
   user-select: none;
+  width: 100%;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
 }
 
 input {

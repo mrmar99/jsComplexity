@@ -6,7 +6,7 @@ const ContainerBlock = styled.section`
   padding: 3rem 1rem;
 
   @media (max-width: 780px) {
-    width: 100vw;
+    width: 100%;
     padding: 2rem 1rem;
   }
 `;

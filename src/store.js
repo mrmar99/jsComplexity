@@ -1,49 +1,12 @@
-import { createStore, createEvent, createEffect } from "effector";
-import contentStructure from "./content/contentStructure.json";
-import parseMD from "parse-md";
+import { createStore, createEvent } from "effector";
+import contentData from "./content/data.json";
 
-export const fetchItems = createEffect(async () => {
-  const mds = {};
-
-  try {
-    for (const lang in contentStructure) {
-      mds[lang] = {};
-      for (const ds in contentStructure[lang]) {
-        mds[lang][ds] = {};
-        const mdFilePaths = contentStructure[lang][ds]["mdfiles"];
-        await Promise.all(mdFilePaths.map(async mdFilePath => {
-          const module = await import(`./content/${mdFilePath}`);
-          const res = await fetch(module.default);
-          const mdData = await res.text();
-          const { content, metadata } = parseMD(mdData);
-          const { title, slug, tc, tcColor, sc, scColor, deprecated } = metadata;
-          mds[lang][ds][slug] = {
-            title,
-            content,
-            slug,
-            tc,
-            tcColor,
-            sc,
-            scColor,
-            deprecated
-          };
-        }));
-      }
-    }
-
-    return mds;
-  } catch (err) {
-    console.error(err);
-    throw err;
-  }
-});
-
-
+export const changeItems = createEvent();
 export const changeLanguage = createEvent();
 export const changeSearchInput = createEvent();
 
 export default createStore({
-  items: {},
+  items: contentData,
   language: "ru",
   searchInputValue: ""
 })
@@ -55,7 +18,7 @@ export default createStore({
     ...store,
     searchInputValue: payload,
   }))
-  .on(fetchItems.done, (store, { result }) => ({
+  .on(changeItems, (store, payload) => ({
     ...store,
-    items: result,
+    items: payload,
   }));

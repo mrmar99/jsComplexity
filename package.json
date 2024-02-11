@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "prebuild": "node src/utils/parseFilePaths.js",
+    "prebuild": "node src/utils/parseContent.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

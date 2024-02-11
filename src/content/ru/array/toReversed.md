@@ -1,9 +1,0 @@
----
-title: toReversed()
-slug: array/to-reversed
-tc: O(1)
-tcColor: green
-sc: O(1)
-scColor: green
----
-`toReversed`.

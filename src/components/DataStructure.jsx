@@ -61,6 +61,7 @@ const DSComplexity = styled.div`
 
 const DataStructure = (props) => {
   const { title, dataStructures } = props;
+
   const items = dataStructures[title.toLowerCase()];
   const { searchInputValue } = useUnit($store);
   const filteredItems = Object.values(items).filter((item) =>

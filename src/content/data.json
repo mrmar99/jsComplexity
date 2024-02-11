@@ -1,0 +1,1716 @@
+{
+  "en": {
+    "array": {
+      "array/arrayfrom": {
+        "content": "Hi :) It's `Array.from`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "Array.from()",
+        "slug": "array/arrayfrom"
+      },
+      "array/arrayfromasync": {
+        "content": "Hi :) It's `Array.fromAsync`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "Array.fromAsync()",
+        "slug": "array/arrayfromasync"
+      },
+      "array/arrayisarray": {
+        "content": "Hi :) It's `Array.isArray`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "Array.isArray()",
+        "slug": "array/arrayisarray"
+      },
+      "array/arrayof": {
+        "content": "Hi :) It's `Array.of`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "Array.of()",
+        "slug": "array/arrayof"
+      },
+      "array/at": {
+        "content": "Hi :) It's `at`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "at()",
+        "slug": "array/at"
+      },
+      "array/concat": {
+        "content": "Hi :) It's `at`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "concat()",
+        "slug": "array/concat"
+      },
+      "array/copywithin": {
+        "content": "en `copyWithin`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "copyWithin()",
+        "slug": "array/copywithin"
+      },
+      "array/entries": {
+        "content": "en `entries`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "entries()",
+        "slug": "array/entries"
+      },
+      "array/every": {
+        "content": "`every`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "every()",
+        "slug": "array/every"
+      },
+      "array/fill": {
+        "content": "`fill`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "fill()",
+        "slug": "array/fill"
+      },
+      "array/filter": {
+        "content": "`filter`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "filter()",
+        "slug": "array/filter"
+      },
+      "array/find": {
+        "content": "`find`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "find()",
+        "slug": "array/find"
+      },
+      "array/findindex": {
+        "content": "`findIndex`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "findIndex()",
+        "slug": "array/findindex"
+      },
+      "array/findlast": {
+        "content": "`findLast`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "findLast()",
+        "slug": "array/findlast"
+      },
+      "array/findlastindex": {
+        "content": "Hi :) It's `findLastIndex`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "findLastIndex()",
+        "slug": "array/findlastindex"
+      },
+      "array/flat": {
+        "content": "`flat`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "flat()",
+        "slug": "array/flat"
+      },
+      "array/flatmap": {
+        "content": "`flatMap`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "flatMap()",
+        "slug": "array/flatmap"
+      },
+      "array/foreach": {
+        "content": "`forEach`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "forEach()",
+        "slug": "array/foreach"
+      },
+      "array/includes": {
+        "content": "`includes`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "includes()",
+        "slug": "array/includes"
+      },
+      "array/indexof": {
+        "content": "`indexOf`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "indexOf()",
+        "slug": "array/indexof"
+      },
+      "array/join": {
+        "content": "Hi :) It's  `join`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "join()",
+        "slug": "array/join"
+      },
+      "array/keys": {
+        "content": "`keys`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "keys()",
+        "slug": "array/keys"
+      },
+      "array/lastindexof": {
+        "content": "Hi :) It's  `lastIndexOf`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "lastIndexOf()",
+        "slug": "array/lastindexof"
+      },
+      "array/map": {
+        "content": "`map`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "map()",
+        "slug": "array/map"
+      },
+      "array/pop": {
+        "content": "`pop`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "pop()",
+        "slug": "array/pop"
+      },
+      "array/push": {
+        "content": "`push`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "push()",
+        "slug": "array/push"
+      },
+      "array/reduce": {
+        "content": "`reduce`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "reduce()",
+        "slug": "array/reduce"
+      },
+      "array/reduceright": {
+        "content": "Hi :) It's `reduceRight`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "reduceRight()",
+        "slug": "array/reduceright"
+      },
+      "array/reverse": {
+        "content": "`reverse`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "reverse()",
+        "slug": "array/reverse"
+      },
+      "array/shift": {
+        "content": "`shift`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "shift()",
+        "slug": "array/shift"
+      },
+      "array/slice": {
+        "content": "`slice`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "slice()",
+        "slug": "array/slice"
+      },
+      "array/some": {
+        "content": "`some`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "some()",
+        "slug": "array/some"
+      },
+      "array/sort": {
+        "content": "Hi :) It's `sort`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "sort()",
+        "slug": "array/sort"
+      },
+      "array/splice": {
+        "content": "`splice`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "splice()",
+        "slug": "array/splice"
+      },
+      "array/tolocalestring": {
+        "content": "Hi :) It's `toLocaleString`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "toLocaleString()",
+        "slug": "array/tolocalestring"
+      },
+      "array/toreversed": {
+        "content": "`toReversed`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "toReversed()",
+        "slug": "array/toreversed"
+      },
+      "array/tosorted": {
+        "content": "`toSorted`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "toSorted()",
+        "slug": "array/tosorted"
+      },
+      "array/tospliced": {
+        "content": "`toSpliced`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "toSpliced()",
+        "slug": "array/tospliced"
+      },
+      "array/tostring": {
+        "content": "`toString`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "toString()",
+        "slug": "array/tostring"
+      },
+      "array/unshift": {
+        "content": "`unshift`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "unshift()",
+        "slug": "array/unshift"
+      },
+      "array/values": {
+        "content": "`values`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "values()",
+        "slug": "array/values"
+      },
+      "array/with": {
+        "content": "`with`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "with()",
+        "slug": "array/with"
+      }
+    },
+    "string": {
+      "string/anchor": {
+        "content": "`anchor`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "anchor()",
+        "slug": "string/anchor"
+      },
+      "string/at": {
+        "content": "`at`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "at()",
+        "slug": "string/at"
+      },
+      "string/big": {
+        "content": "`big`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "big()",
+        "slug": "string/big"
+      },
+      "string/blink": {
+        "content": "`blink`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "blink()",
+        "slug": "string/blink"
+      },
+      "string/bold": {
+        "content": "`bold`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "bold()",
+        "slug": "string/bold"
+      },
+      "string/charat": {
+        "content": "`charAt`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "charAt()",
+        "slug": "string/charat"
+      },
+      "string/charcodeat": {
+        "content": "`charCodeAt`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "charCodeAt()",
+        "slug": "string/charcodeat"
+      },
+      "string/codepointat": {
+        "content": "`codePointAt`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "codePointAt()",
+        "slug": "string/codepointat"
+      },
+      "string/concat": {
+        "content": "`concat`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "concat()",
+        "slug": "string/concat"
+      },
+      "string/endswith": {
+        "content": "`endsWith`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "endsWith()",
+        "slug": "string/endswith"
+      },
+      "string/fixed": {
+        "content": "`fixed`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "fixed()",
+        "slug": "string/fixed"
+      },
+      "string/fontcolor": {
+        "content": "`fontcolor`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "fontcolor()",
+        "slug": "string/fontcolor"
+      },
+      "string/fontsize": {
+        "content": "`fontsize`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "fontsize()",
+        "slug": "string/fontsize"
+      },
+      "string/includes": {
+        "content": "`includes`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "includes()",
+        "slug": "string/includes"
+      },
+      "string/indexof": {
+        "content": "`indexOf`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "indexOf()",
+        "slug": "string/indexof"
+      },
+      "string/iswellformed": {
+        "content": "`isWellFormed`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "isWellFormed()",
+        "slug": "string/iswellformed"
+      },
+      "string/italics": {
+        "content": "`italics`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "italics()",
+        "slug": "string/italics"
+      },
+      "string/lastindexof": {
+        "content": "`lastIndexOf`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "lastIndexOf()",
+        "slug": "string/lastindexof"
+      },
+      "string/link": {
+        "content": "`link`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "link()",
+        "slug": "string/link"
+      },
+      "string/localecompare": {
+        "content": "`localeCompare`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "localeCompare()",
+        "slug": "string/localecompare"
+      },
+      "string/match": {
+        "content": "`match`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "match()",
+        "slug": "string/match"
+      },
+      "string/matchall": {
+        "content": "`matchAll`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "matchAll()",
+        "slug": "string/matchall"
+      },
+      "string/normalize": {
+        "content": "`normalize`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "normalize()",
+        "slug": "string/normalize"
+      },
+      "string/padend": {
+        "content": "`padEnd`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "padEnd()",
+        "slug": "string/padend"
+      },
+      "string/padstart": {
+        "content": "`padStart`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "padStart()",
+        "slug": "string/padstart"
+      },
+      "string/repeat": {
+        "content": "`repeat`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "repeat()",
+        "slug": "string/repeat"
+      },
+      "string/replace": {
+        "content": "`replace`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "replace()",
+        "slug": "string/replace"
+      },
+      "string/replaceall": {
+        "content": "`replaceAll`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "replaceAll()",
+        "slug": "string/replaceall"
+      },
+      "string/search": {
+        "content": "`search`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "search()",
+        "slug": "string/search"
+      },
+      "string/slice": {
+        "content": "Hi :) It's `slice`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "slice()",
+        "slug": "string/slice"
+      },
+      "string/small": {
+        "content": "`small`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "small()",
+        "slug": "string/small"
+      },
+      "string/split": {
+        "content": "Hi :) It's `split`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "split()",
+        "slug": "string/split"
+      },
+      "string/startswith": {
+        "content": "`startsWith`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "startsWith()",
+        "slug": "string/startswith"
+      },
+      "string/strike": {
+        "content": "`strike`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "strike()",
+        "slug": "string/strike"
+      },
+      "string/stringfromcharcode": {
+        "content": "`String.fromCharCode`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "String.fromCharCode()",
+        "slug": "string/stringfromcharcode"
+      },
+      "string/stringfromcodepoint": {
+        "content": "`String.fromCodePoint`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "String.fromCodePoint()",
+        "slug": "string/stringfromcodepoint"
+      },
+      "string/stringraw": {
+        "content": "`String.raw`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "String.raw()",
+        "slug": "string/stringraw"
+      },
+      "string/sub": {
+        "content": "`sub`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "sub()",
+        "slug": "string/sub"
+      },
+      "string/substr": {
+        "content": "`substr`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "substr()",
+        "slug": "string/substr"
+      },
+      "string/substring": {
+        "content": "`substring`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "substring()",
+        "slug": "string/substring"
+      },
+      "string/sup": {
+        "content": "`sup`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "sup()",
+        "slug": "string/sup"
+      },
+      "string/tolocalelowercase": {
+        "content": "`toLocaleLowerCase`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "toLocaleLowerCase()",
+        "slug": "string/tolocalelowercase"
+      },
+      "string/tolocaleuppercase": {
+        "content": "`toLocaleUpperCase`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "toLocaleUpperCase()",
+        "slug": "string/tolocaleuppercase"
+      },
+      "string/tolowercase": {
+        "content": "`toLowerCase`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "toLowerCase()",
+        "slug": "string/tolowercase"
+      },
+      "string/tostring": {
+        "content": "`toString`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "toString()",
+        "slug": "string/tostring"
+      },
+      "string/touppercase": {
+        "content": "`toUpperCase`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "toUpperCase()",
+        "slug": "string/touppercase"
+      },
+      "string/towellformed": {
+        "content": "`toWellFormed`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "toWellFormed()",
+        "slug": "string/towellformed"
+      },
+      "string/trim": {
+        "content": "`trim`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "trim()",
+        "slug": "string/trim"
+      },
+      "string/trimend": {
+        "content": "`trimEnd`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "trimEnd()",
+        "slug": "string/trimend"
+      },
+      "string/trimstart": {
+        "content": "`trimStart`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "trimStart()",
+        "slug": "string/trimstart"
+      },
+      "string/valueof": {
+        "content": "`valueOf`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "valueOf",
+        "slug": "string/valueof"
+      }
+    }
+  },
+  "ru": {
+    "array": {
+      "array/arrayfrom": {
+        "content": "Hi :) It's `Array.from`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "Array.from()",
+        "slug": "array/arrayfrom"
+      },
+      "array/arrayfromasync": {
+        "content": "Hi :) It's `Array.fromAsync`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "Array.fromAsync()",
+        "slug": "array/arrayfromasync"
+      },
+      "array/arrayisarray": {
+        "content": "Привет :) `Array.isArray`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "Array.isArray()",
+        "slug": "array/arrayisarray"
+      },
+      "array/arrayof": {
+        "content": "Привет :) `Array.of`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "Array.of()",
+        "slug": "array/arrayof"
+      },
+      "array/at": {
+        "content": "Привет :) Это метод `at`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "at()",
+        "slug": "array/at"
+      },
+      "array/concat": {
+        "content": "Привет :) Это метод `at`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "concat()",
+        "slug": "array/concat"
+      },
+      "array/copywithin": {
+        "content": "Привет :) Это метод `copyWithin`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "copyWithin()",
+        "slug": "array/copywithin"
+      },
+      "array/entries": {
+        "content": "ru `entries`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "entries()",
+        "slug": "array/entries"
+      },
+      "array/every": {
+        "content": "`every`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "every()",
+        "slug": "array/every"
+      },
+      "array/fill": {
+        "content": "`fill`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "fill()",
+        "slug": "array/fill"
+      },
+      "array/filter": {
+        "content": "`filter`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "filter()",
+        "slug": "array/filter"
+      },
+      "array/find": {
+        "content": "`find`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "find()",
+        "slug": "array/find"
+      },
+      "array/findindex": {
+        "content": "`findIndex`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "findIndex()",
+        "slug": "array/findindex"
+      },
+      "array/findlast": {
+        "content": "`findLast`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "findLast()",
+        "slug": "array/findlast"
+      },
+      "array/findlastindex": {
+        "content": "Привет :) Это метод `findLastIndex`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "findLastIndex()",
+        "slug": "array/findlastindex"
+      },
+      "array/flat": {
+        "content": "`flat`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "flat()",
+        "slug": "array/flat"
+      },
+      "array/flatmap": {
+        "content": "`flatMap`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "flatMap()",
+        "slug": "array/flatmap"
+      },
+      "array/foreach": {
+        "content": "`forEach`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "forEach()",
+        "slug": "array/foreach"
+      },
+      "array/includes": {
+        "content": "`includes`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "includes()",
+        "slug": "array/includes"
+      },
+      "array/indexof": {
+        "content": "`indexOf`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "indexOf()",
+        "slug": "array/indexof"
+      },
+      "array/join": {
+        "content": "Привет :) Это метод `join`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "join()",
+        "slug": "array/join"
+      },
+      "array/keys": {
+        "content": "`keys`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "keys()",
+        "slug": "array/keys"
+      },
+      "array/lastindexof": {
+        "content": "Привет :) Это метод `lastIndexOf`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "lastIndexOf()",
+        "slug": "array/lastindexof"
+      },
+      "array/map": {
+        "content": "`map`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "map()",
+        "slug": "array/map"
+      },
+      "array/pop": {
+        "content": "`pop`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "pop()",
+        "slug": "array/pop"
+      },
+      "array/push": {
+        "content": "`push`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "push()",
+        "slug": "array/push"
+      },
+      "array/reduce": {
+        "content": "`reduce`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "reduce()",
+        "slug": "array/reduce"
+      },
+      "array/reduceright": {
+        "content": "Привет :) Это метод `reduceRight`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "reduceRight()",
+        "slug": "array/reduceright"
+      },
+      "array/reverse": {
+        "content": "`reverse`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "reverse()",
+        "slug": "array/reverse"
+      },
+      "array/shift": {
+        "content": "`shift`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "shift()",
+        "slug": "array/shift"
+      },
+      "array/slice": {
+        "content": "`slice`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "slice()",
+        "slug": "array/slice"
+      },
+      "array/some": {
+        "content": "`some`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "some()",
+        "slug": "array/some"
+      },
+      "array/sort": {
+        "content": "Привет :) Это метод `sort`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "sort()",
+        "slug": "array/sort"
+      },
+      "array/splice": {
+        "content": "`splice`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "splice()",
+        "slug": "array/splice"
+      },
+      "array/tolocalestring": {
+        "content": "Привет :) Это метод `toLocaleString`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "toLocaleString()",
+        "slug": "array/tolocalestring"
+      },
+      "array/toreversed": {
+        "content": "`toReversed`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "toReversed()",
+        "slug": "array/toreversed"
+      },
+      "array/tosorted": {
+        "content": "`toSorted`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "toSorted()",
+        "slug": "array/tosorted"
+      },
+      "array/tospliced": {
+        "content": "`toSpliced`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "toSpliced()",
+        "slug": "array/tospliced"
+      },
+      "array/tostring": {
+        "content": "`toString`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "toString()",
+        "slug": "array/tostring"
+      },
+      "array/unshift": {
+        "content": "`unshift`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "unshift()",
+        "slug": "array/unshift"
+      },
+      "array/values": {
+        "content": "`values`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "values()",
+        "slug": "array/values"
+      },
+      "array/with": {
+        "content": "`with`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "with()",
+        "slug": "array/with"
+      }
+    },
+    "string": {
+      "string/anchor": {
+        "content": "`anchor`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "anchor()",
+        "slug": "string/anchor"
+      },
+      "string/at": {
+        "content": "`at`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "at()",
+        "slug": "string/at"
+      },
+      "string/big": {
+        "content": "`big`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "big()",
+        "slug": "string/big"
+      },
+      "string/blink": {
+        "content": "`blink`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "blink()",
+        "slug": "string/blink"
+      },
+      "string/bold": {
+        "content": "`bold`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "bold()",
+        "slug": "string/bold"
+      },
+      "string/charat": {
+        "content": "`charAt`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "charAt()",
+        "slug": "string/charat"
+      },
+      "string/charcodeat": {
+        "content": "`charCodeAt`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "charCodeAt()",
+        "slug": "string/charcodeat"
+      },
+      "string/codepointat": {
+        "content": "`codePointAt`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "codePointAt()",
+        "slug": "string/codepointat"
+      },
+      "string/concat": {
+        "content": "`concat`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "concat()",
+        "slug": "string/concat"
+      },
+      "string/endswith": {
+        "content": "`endsWith`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "endsWith()",
+        "slug": "string/endswith"
+      },
+      "string/fixed": {
+        "content": "`fixed`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "fixed()",
+        "slug": "string/fixed"
+      },
+      "string/fontcolor": {
+        "content": "`fontcolor`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "fontcolor()",
+        "slug": "string/fontcolor"
+      },
+      "string/fontsize": {
+        "content": "`fontsize`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "fontsize()",
+        "slug": "string/fontsize"
+      },
+      "string/includes": {
+        "content": "`includes`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "includes()",
+        "slug": "string/includes"
+      },
+      "string/indexof": {
+        "content": "`indexOf`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "indexOf()",
+        "slug": "string/indexof"
+      },
+      "string/iswellformed": {
+        "content": "`isWellFormed`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "isWellFormed()",
+        "slug": "string/iswellformed"
+      },
+      "string/italics": {
+        "content": "`italics`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "italics()",
+        "slug": "string/italics"
+      },
+      "string/lastindexof": {
+        "content": "`lastIndexOf`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "lastIndexOf()",
+        "slug": "string/lastindexof"
+      },
+      "string/link": {
+        "content": "`link`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "link()",
+        "slug": "string/link"
+      },
+      "string/localecompare": {
+        "content": "`localeCompare`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "localeCompare()",
+        "slug": "string/localecompare"
+      },
+      "string/match": {
+        "content": "`match`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "match()",
+        "slug": "string/match"
+      },
+      "string/matchall": {
+        "content": "`matchAll`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "matchAll()",
+        "slug": "string/matchall"
+      },
+      "string/normalize": {
+        "content": "`normalize`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "normalize()",
+        "slug": "string/normalize"
+      },
+      "string/padend": {
+        "content": "`padEnd`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "padEnd()",
+        "slug": "string/padend"
+      },
+      "string/padstart": {
+        "content": "`padStart`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "padStart()",
+        "slug": "string/padstart"
+      },
+      "string/repeat": {
+        "content": "`repeat`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "repeat()",
+        "slug": "string/repeat"
+      },
+      "string/replace": {
+        "content": "`replace`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "replace()",
+        "slug": "string/replace"
+      },
+      "string/replaceall": {
+        "content": "`replaceAll`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "replaceAll()",
+        "slug": "string/replaceall"
+      },
+      "string/search": {
+        "content": "`search`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "search()",
+        "slug": "string/search"
+      },
+      "string/slice": {
+        "content": "Привет :) Это метод `slice`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "slice()",
+        "slug": "string/slice"
+      },
+      "string/small": {
+        "content": "`small`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "small()",
+        "slug": "string/small"
+      },
+      "string/split": {
+        "content": "Привет :) Это метод `split`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "split()",
+        "slug": "string/split"
+      },
+      "string/startswith": {
+        "content": "`startsWith`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "startsWith()",
+        "slug": "string/startswith"
+      },
+      "string/strike": {
+        "content": "`strike`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "strike()",
+        "slug": "string/strike"
+      },
+      "string/stringfromcharcode": {
+        "content": "`String.fromCharCode`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "String.fromCharCode()",
+        "slug": "string/stringfromcharcode"
+      },
+      "string/stringfromcodepoint": {
+        "content": "`String.fromCodePoint`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "String.fromCodePoint()",
+        "slug": "string/stringfromcodepoint"
+      },
+      "string/stringraw": {
+        "content": "`String.raw`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "String.raw()",
+        "slug": "string/stringraw"
+      },
+      "string/sub": {
+        "content": "`sub`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "sub()",
+        "slug": "string/sub"
+      },
+      "string/substr": {
+        "content": "`substr`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "substr()",
+        "slug": "string/substr"
+      },
+      "string/substring": {
+        "content": "`substring`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "substring()",
+        "slug": "string/substring"
+      },
+      "string/sup": {
+        "content": "`sup`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "deprecated": true,
+        "title": "sup()",
+        "slug": "string/sup"
+      },
+      "string/tolocalelowercase": {
+        "content": "`toLocaleLowerCase`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "toLocaleLowerCase()",
+        "slug": "string/tolocalelowercase"
+      },
+      "string/tolocaleuppercase": {
+        "content": "`toLocaleUpperCase`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "toLocaleUpperCase()",
+        "slug": "string/tolocaleuppercase"
+      },
+      "string/tolowercase": {
+        "content": "`toLowerCase`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "toLowerCase()",
+        "slug": "string/tolowercase"
+      },
+      "string/tostring": {
+        "content": "`toString`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "toString()",
+        "slug": "string/tostring"
+      },
+      "string/touppercase": {
+        "content": "`toUpperCase`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "toUpperCase()",
+        "slug": "string/touppercase"
+      },
+      "string/towellformed": {
+        "content": "`toWellFormed`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "toWellFormed()",
+        "slug": "string/towellformed"
+      },
+      "string/trim": {
+        "content": "`trim`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "trim()",
+        "slug": "string/trim"
+      },
+      "string/trimend": {
+        "content": "`trimEnd`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "trimEnd()",
+        "slug": "string/trimend"
+      },
+      "string/trimstart": {
+        "content": "`trimStart`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "trimStart()",
+        "slug": "string/trimstart"
+      },
+      "string/valueof": {
+        "content": "`valueOf`.",
+        "tc": "O(1)",
+        "tcColor": "green",
+        "sc": "O(1)",
+        "scColor": "Green",
+        "title": "valueOf",
+        "slug": "string/valueof"
+      }
+    }
+  }
+}

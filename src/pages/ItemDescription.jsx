@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Navbar from "../components/Navbar";
 import { useParams } from "react-router-dom";
 import Markdown from "markdown-to-jsx";
-import { fetchItems } from "../store";
-import Spinner from "../components/Spinner";
 import styled from "styled-components";
 import Complexity from "../components/Complexity";
 import ComplexityTooltip from "../components/ComplexityTooltip";
 import Deprecated from "../components/Deprecated";
+import { useUnit } from "effector-react";
+import $store from "../store";
 
 const ItemTitleBlock = styled.div`
   margin-bottom: 0.5rem;
@@ -88,27 +88,11 @@ const ComplexityBlock = styled.div`
   }
 `;
 
-const ItemDescription = (props) => {
+const ItemDescription = () => {
   const { ds, itemid } = useParams();
-  const { store } = props;
+  const store = useUnit($store);
   const { items, language } = store;
-  const [loading, setLoading] = useState(true);
-  const [item, setItem] = useState({});
-
-  useEffect(() => {
-    const fetchData = async () => {
-      await fetchItems();
-      setLoading(false);
-    };
-
-    if (Object.keys(items).length === 0) {
-      fetchData();
-    } else {
-      const item = items[language][ds][`${ds}/${itemid}`];
-      setItem(item);
-      setLoading(false);
-    }
-  }, [items, language, ds, itemid]);
+  const item = items[language][ds][`${ds}/${itemid}`];
 
   const { title, content, tc, tcColor, sc, scColor, deprecated } = item;
 
@@ -144,7 +128,6 @@ const ItemDescription = (props) => {
       ) : (
         <></>
       )}
-      <Spinner loading={loading} />
     </>
   );
 };

@@ -1,19 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Navbar from "../components/Navbar";
 import DataStructure from "../components/DataStructure";
-import Spinner from "../components/Spinner";
+import { useUnit } from "effector-react";
+import $store from "../store";
 
-const Home = (props) => {
-  const { store } = props;
-  const { items, language, searchInputValue } = store;
+const Home = () => {
+  const store = useUnit($store);
+  const { items, language } = store;
   const dataStructures = items[language];
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    if (Object.keys(items).length) {
-      setLoading(false);
-    }
-  }, [items, language, searchInputValue]);
 
   return (
     <>
@@ -31,7 +25,6 @@ const Home = (props) => {
           )
         })
       }
-      <Spinner loading={loading} />
     </>
   );
 };
