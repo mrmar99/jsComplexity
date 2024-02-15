@@ -80,3 +80,10 @@ code {
   font-weight: 800;
 }
 
+@font-face {
+  font-family: "JetBrainsMonoExtraLight";
+  src: local("JetBrainsMonoExtraLight"),
+   url("./fonts/JetBrainsMono-ExtraLight.woff2") format("truetype");
+  font-weight: 600;
+}
+
