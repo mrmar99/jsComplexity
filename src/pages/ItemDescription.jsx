@@ -108,13 +108,27 @@ const GithubLink = styled.a`
   color: var(--main-color);
 `;
 
+const ECMAScriptLink = styled.a`
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  margin-left: 1rem;
+
+  &::after {
+    content: '↗️';
+  }
+
+  @media (max-width: 780px) {
+    font-size: 1.5rem;
+  }
+`;
+
 const ItemDescription = () => {
   const { ds, itemid } = useParams();
   const store = useUnit($store);
   const { items, language } = store;
   const item = items[language][ds][`${ds}/${itemid}`];
 
-  const { title, content, tc, tcColor, sc, scColor, deprecated } = item;
+  const { title, content, tc, tcColor, sc, scColor, deprecated, esLink } = item;
 
   const capitalizedDs = ds.charAt(0).toUpperCase() + ds.slice(1);
   const linkToGithub = `https://github.com/mrmar99/jsComplexity/edit/master/src/content/${capitalizedDs}/${title.replaceAll(
@@ -133,7 +147,10 @@ const ItemDescription = () => {
         <>
           <HeaderBlock>
             <ItemTitleBlock>
-              <ItemTitle>{title}</ItemTitle>
+              <ItemTitle>
+                {title} 
+                {esLink ? <ECMAScriptLink target="_blank" href={esLink}>ES</ECMAScriptLink> : ''}
+              </ItemTitle>
               {deprecated && <Deprecated />}
             </ItemTitleBlock>
             <Complexities>
@@ -155,8 +172,8 @@ const ItemDescription = () => {
                 overrides: {
                   pre: {
                     component: Code,
-                  }
-                }
+                  },
+                },
               }}
             >
               {content}
