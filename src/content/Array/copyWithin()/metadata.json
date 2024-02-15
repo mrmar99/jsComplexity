@@ -1,6 +1,21 @@
 {
-  "tc": "O(1)",
-  "tcColor": "green",
-  "sc": "O(1)",
-  "scColor": "Green"
+  "tc": {
+    "best": {
+      "title": "O(1)",
+      "color": "green"
+    },
+    "average": {
+      "title": "O(n)",
+      "color": "lightgreen"
+    },
+    "worst": {
+      "title": "O(n * m)",
+      "color": "limegreen"
+    }
+  },
+  "sc": {
+    "title": "O(n * m)",
+    "color": "limegreen"
+  },
+  "esLink": ""
 }

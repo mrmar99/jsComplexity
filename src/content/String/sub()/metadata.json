@@ -1,7 +1,21 @@
 {
-  "tc": "O(1)",
-  "tcColor": "green",
-  "sc": "O(1)",
-  "scColor": "Green",
-  "deprecated": true
+  "tc": {
+    "best": {
+      "title": "O(n + m)",
+      "color": "lightgreen"
+    },
+    "average": {
+      "title": "O(n + m)",
+      "color": "limegreen"
+    },
+    "worst": {
+      "title": "O(n * m)",
+      "color": "limegreen"
+    }
+  },
+  "sc": {
+    "title": "O(n * m)",
+    "color": "limegreen"
+  },
+  "esLink": ""
 }

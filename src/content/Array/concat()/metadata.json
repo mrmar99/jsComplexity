@@ -1,7 +1,21 @@
 {
-  "tc": "O(n * m)",
-  "tcColor": "limegreen",
-  "sc": "O(n * m)",
-  "scColor": "limegreen",
+  "tc": {
+    "best": {
+      "title": "O(n + m)",
+      "color": "lightgreen"
+    },
+    "average": {
+      "title": "O(n + m)",
+      "color": "limegreen"
+    },
+    "worst": {
+      "title": "O(n * m)",
+      "color": "limegreen"
+    }
+  },
+  "sc": {
+    "title": "O(n * m)",
+    "color": "limegreen"
+  },
   "esLink": "https://262.ecma-international.org/#sec-array.prototype.concat"
 }

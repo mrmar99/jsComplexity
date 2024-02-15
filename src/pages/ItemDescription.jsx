@@ -128,7 +128,7 @@ const ItemDescription = () => {
   const { items, language } = store;
   const item = items[language][ds][`${ds}/${itemid}`];
 
-  const { title, content, tc, tcColor, sc, scColor, deprecated, esLink } = item;
+  const { title, content, tc, sc, deprecated, esLink } = item;
 
   const capitalizedDs = ds.charAt(0).toUpperCase() + ds.slice(1);
   const linkToGithub = `https://github.com/mrmar99/jsComplexity/edit/master/src/content/${capitalizedDs}/${title.replaceAll(
@@ -156,12 +156,12 @@ const ItemDescription = () => {
             <Complexities>
               <ComplexityTooltip type="tc">
                 <ComplexityBlock>
-                  <span>TC</span> <Complexity title={tc} color={tcColor} />
+                  <span>TC</span> <Complexity complexity={tc} type="tc" />
                 </ComplexityBlock>
               </ComplexityTooltip>
               <ComplexityTooltip type="sc">
                 <ComplexityBlock>
-                  <span>SC</span> <Complexity title={sc} color={scColor} />
+                  <span>SC</span> <Complexity complexity={sc} type="sc" />
                 </ComplexityBlock>
               </ComplexityTooltip>
             </Complexities>

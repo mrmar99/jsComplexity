@@ -10,17 +10,25 @@ const ComplexityTooltip = ({ type, children }) => {
 
   const tooltipText = {
     en: {
-      tc: "Time Complexity",
-      sc: "Space Complexity",
+      tc: `Time Complexity<br />
+      Best case<br />
+      Average case<br />
+      Worst case
+      `,
+      sc: "Space Complexity in Worst case",
     },
     ru: {
-      tc: "Сложность по времени",
-      sc: "Сложность по памяти",
+      tc: `Сложность по времени<br />
+      Лучший случай<br />
+      Средний случай<br />
+      Худший случай
+      `,
+      sc: "Сложность по памяти в Худшем случае",
     },
   };
 
   return (
-    <div data-tooltip-content={tooltipText[language][type]} data-tooltip-id={`tooltip-${type}`}>
+    <div style={{textAlign: "center"}} data-tooltip-html={tooltipText[language][type]} data-tooltip-id={`tooltip-${type}`}>
       {children}
       <Tooltip id={`tooltip-${type}`} />
     </div>

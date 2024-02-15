@@ -58,13 +58,13 @@ const TrashSvg = styled.img.attrs({
 
 const DSItem = (props) => {
   const { title, item } = props;
-  const { slug, tc, tcColor, sc, scColor, deprecated } = item;
+  const { slug, tc, sc, deprecated } = item;
 
   return (
     <DSItemLink to={slug}>
       <DSItemTitle>{title} {deprecated && <TrashSvg />}</DSItemTitle>
-      <Complexity title={tc} color={tcColor} />
-      <Complexity title={sc} color={scColor} />
+      <Complexity complexity={tc} type="tc" />
+      <Complexity complexity={sc} type="sc" />
     </DSItemLink>
   );
 };

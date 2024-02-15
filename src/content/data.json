@@ -3,381 +3,1009 @@
     "array": {
       "array/arrayfrom": {
         "content": "Hi :) It's `Array.from`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "green"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "green"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "Array.from()",
         "slug": "array/arrayfrom"
       },
       "array/arrayfromasync": {
         "content": "Hi :) It's `Array.fromAsync`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "orange"
+          },
+          "average": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "Array.fromAsync()",
         "slug": "array/arrayfromasync"
       },
       "array/arrayisarray": {
         "content": "Hi :) It's `Array.isArray`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "Array.isArray()",
         "slug": "array/arrayisarray"
       },
       "array/arrayof": {
         "content": "Hi :) It's `Array.of`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "Array.of()",
         "slug": "array/arrayof"
       },
       "array/at": {
         "content": "The **`at()`** method of Array instances takes an integer value and returns the item at that index, allowing for positive and negative integers. Negative integers count back from the last item in the array.\r\n",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "green",
+        "tc": {
+          "best": {
+            "title": "O(1)",
+            "color": "green"
+          },
+          "average": {
+            "title": "O(1)",
+            "color": "green"
+          },
+          "worst": {
+            "title": "O(1)",
+            "color": "green"
+          }
+        },
+        "sc": {
+          "title": "O(1)",
+          "color": "green"
+        },
         "esLink": "https://262.ecma-international.org/#sec-array.prototype.at",
         "title": "at()",
         "slug": "array/at"
       },
       "array/concat": {
         "content": "Hi :) It's `at`.",
-        "tc": "O(n * m)",
-        "tcColor": "limegreen",
-        "sc": "O(n * m)",
-        "scColor": "limegreen",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
         "esLink": "https://262.ecma-international.org/#sec-array.prototype.concat",
         "title": "concat()",
         "slug": "array/concat"
       },
       "array/copywithin": {
         "content": "en `copyWithin`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(1)",
+            "color": "green"
+          },
+          "average": {
+            "title": "O(n)",
+            "color": "lightgreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "copyWithin()",
         "slug": "array/copywithin"
       },
       "array/entries": {
         "content": "en `entries`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "entries()",
         "slug": "array/entries"
       },
       "array/every": {
         "content": "`every`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "every()",
         "slug": "array/every"
       },
       "array/fill": {
         "content": "`fill`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "fill()",
         "slug": "array/fill"
       },
       "array/filter": {
         "content": "`filter`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "filter()",
         "slug": "array/filter"
       },
       "array/find": {
         "content": "`find`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "find()",
         "slug": "array/find"
       },
       "array/findindex": {
         "content": "`findIndex`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "findIndex()",
         "slug": "array/findindex"
       },
       "array/findlast": {
         "content": "`findLast`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "findLast()",
         "slug": "array/findlast"
       },
       "array/findlastindex": {
         "content": "Hi :) It's `findLastIndex`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "findLastIndex()",
         "slug": "array/findlastindex"
       },
       "array/flat": {
         "content": "`flat`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "flat()",
         "slug": "array/flat"
       },
       "array/flatmap": {
         "content": "`flatMap`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "flatMap()",
         "slug": "array/flatmap"
       },
       "array/foreach": {
         "content": "`forEach`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "forEach()",
         "slug": "array/foreach"
       },
       "array/includes": {
         "content": "`includes`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "includes()",
         "slug": "array/includes"
       },
       "array/indexof": {
         "content": "`indexOf`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "indexOf()",
         "slug": "array/indexof"
       },
       "array/join": {
         "content": "Hi :) It's  `join`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "join()",
         "slug": "array/join"
       },
       "array/keys": {
         "content": "`keys`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "keys()",
         "slug": "array/keys"
       },
       "array/lastindexof": {
         "content": "Hi :) It's  `lastIndexOf`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "lastIndexOf()",
         "slug": "array/lastindexof"
       },
       "array/map": {
         "content": "`map`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "map()",
         "slug": "array/map"
       },
       "array/pop": {
         "content": "`pop`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "pop()",
         "slug": "array/pop"
       },
       "array/push": {
         "content": "`push`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "push()",
         "slug": "array/push"
       },
       "array/reduce": {
         "content": "`reduce`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "reduce()",
         "slug": "array/reduce"
       },
       "array/reduceright": {
         "content": "Hi :) It's `reduceRight`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "reduceRight()",
         "slug": "array/reduceright"
       },
       "array/reverse": {
         "content": "`reverse`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "reverse()",
         "slug": "array/reverse"
       },
       "array/shift": {
         "content": "`shift`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "shift()",
         "slug": "array/shift"
       },
       "array/slice": {
         "content": "`slice`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "slice()",
         "slug": "array/slice"
       },
       "array/some": {
         "content": "`some`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "some()",
         "slug": "array/some"
       },
       "array/sort": {
         "content": "Hi :) It's `sort`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "sort()",
         "slug": "array/sort"
       },
       "array/splice": {
         "content": "`splice`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "splice()",
         "slug": "array/splice"
       },
       "array/tolocalestring": {
         "content": "Hi :) It's `toLocaleString`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "toLocaleString()",
         "slug": "array/tolocalestring"
       },
       "array/toreversed": {
         "content": "`toReversed`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "toReversed()",
         "slug": "array/toreversed"
       },
       "array/tosorted": {
         "content": "`toSorted`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "toSorted()",
         "slug": "array/tosorted"
       },
       "array/tospliced": {
         "content": "`toSpliced`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "toSpliced()",
         "slug": "array/tospliced"
       },
       "array/tostring": {
         "content": "`toString`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "toString()",
         "slug": "array/tostring"
       },
       "array/unshift": {
         "content": "`unshift`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "unshift()",
         "slug": "array/unshift"
       },
       "array/values": {
         "content": "`values`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "values()",
         "slug": "array/values"
       },
       "array/with": {
         "content": "`with`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "with()",
         "slug": "array/with"
       }
@@ -385,474 +1013,1225 @@
     "string": {
       "string/anchor": {
         "content": "`anchor`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "anchor()",
         "slug": "string/anchor"
       },
       "string/at": {
         "content": "`at`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "at()",
         "slug": "string/at"
       },
       "string/big": {
         "content": "`big`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "big()",
         "slug": "string/big"
       },
       "string/blink": {
         "content": "`blink`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "blink()",
         "slug": "string/blink"
       },
       "string/bold": {
         "content": "`bold`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "bold()",
         "slug": "string/bold"
       },
       "string/charat": {
         "content": "`charAt`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "charAt()",
         "slug": "string/charat"
       },
       "string/charcodeat": {
         "content": "`charCodeAt`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "charCodeAt()",
         "slug": "string/charcodeat"
       },
       "string/codepointat": {
         "content": "`codePointAt`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "codePointAt()",
         "slug": "string/codepointat"
       },
       "string/concat": {
         "content": "`concat`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "concat()",
         "slug": "string/concat"
       },
       "string/endswith": {
         "content": "`endsWith`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "endsWith()",
         "slug": "string/endswith"
       },
       "string/fixed": {
         "content": "`fixed`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "fixed()",
         "slug": "string/fixed"
       },
       "string/fontcolor": {
         "content": "`fontcolor`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "fontcolor()",
         "slug": "string/fontcolor"
       },
       "string/fontsize": {
         "content": "`fontsize`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "fontsize()",
         "slug": "string/fontsize"
       },
       "string/includes": {
         "content": "`includes`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "includes()",
         "slug": "string/includes"
       },
       "string/indexof": {
         "content": "`indexOf`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "indexOf()",
         "slug": "string/indexof"
       },
       "string/iswellformed": {
         "content": "`isWellFormed`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "isWellFormed()",
         "slug": "string/iswellformed"
       },
       "string/italics": {
         "content": "`italics`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "italics()",
         "slug": "string/italics"
       },
       "string/lastindexof": {
         "content": "`lastIndexOf`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "lastIndexOf()",
         "slug": "string/lastindexof"
       },
       "string/link": {
         "content": "`link`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "link()",
         "slug": "string/link"
       },
       "string/localecompare": {
         "content": "`localeCompare`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "localeCompare()",
         "slug": "string/localecompare"
       },
       "string/match": {
         "content": "`match`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "match()",
         "slug": "string/match"
       },
       "string/matchall": {
         "content": "`matchAll`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "matchAll()",
         "slug": "string/matchall"
       },
       "string/normalize": {
         "content": "`normalize`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "normalize()",
         "slug": "string/normalize"
       },
       "string/padend": {
         "content": "`padEnd`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "padEnd()",
         "slug": "string/padend"
       },
       "string/padstart": {
         "content": "`padStart`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "padStart()",
         "slug": "string/padstart"
       },
       "string/repeat": {
         "content": "`repeat`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "repeat()",
         "slug": "string/repeat"
       },
       "string/replace": {
         "content": "`replace`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "replace()",
         "slug": "string/replace"
       },
       "string/replaceall": {
         "content": "`replaceAll`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "replaceAll()",
         "slug": "string/replaceall"
       },
       "string/search": {
         "content": "`search`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "search()",
         "slug": "string/search"
       },
       "string/slice": {
         "content": "Hi :) It's `slice`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "slice()",
         "slug": "string/slice"
       },
       "string/small": {
         "content": "`small`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "small()",
         "slug": "string/small"
       },
       "string/split": {
         "content": "Hi :) It's `split`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "split()",
         "slug": "string/split"
       },
       "string/startswith": {
         "content": "`startsWith`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "startsWith()",
         "slug": "string/startswith"
       },
       "string/strike": {
         "content": "`strike`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "strike()",
         "slug": "string/strike"
       },
       "string/stringfromcharcode": {
         "content": "`String.fromCharCode`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "String.fromCharCode()",
         "slug": "string/stringfromcharcode"
       },
       "string/stringfromcodepoint": {
         "content": "`String.fromCodePoint`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "String.fromCodePoint()",
         "slug": "string/stringfromcodepoint"
       },
       "string/stringraw": {
         "content": "`String.raw`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "String.raw()",
         "slug": "string/stringraw"
       },
       "string/sub": {
         "content": "`sub`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "sub()",
         "slug": "string/sub"
       },
       "string/substr": {
         "content": "`substr`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "substr()",
         "slug": "string/substr"
       },
       "string/substring": {
         "content": "`substring`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "substring()",
         "slug": "string/substring"
       },
       "string/sup": {
         "content": "`sup`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "sup()",
         "slug": "string/sup"
       },
       "string/tolocalelowercase": {
         "content": "`toLocaleLowerCase`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "toLocaleLowerCase()",
         "slug": "string/tolocalelowercase"
       },
       "string/tolocaleuppercase": {
         "content": "`toLocaleUpperCase`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "toLocaleUpperCase()",
         "slug": "string/tolocaleuppercase"
       },
       "string/tolowercase": {
         "content": "`toLowerCase`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "toLowerCase()",
         "slug": "string/tolowercase"
       },
       "string/tostring": {
         "content": "`toString`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "toString()",
         "slug": "string/tostring"
       },
       "string/touppercase": {
         "content": "`toUpperCase`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "toUpperCase()",
         "slug": "string/touppercase"
       },
       "string/towellformed": {
         "content": "`toWellFormed`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "toWellFormed()",
         "slug": "string/towellformed"
       },
       "string/trim": {
         "content": "`trim`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "trim()",
         "slug": "string/trim"
       },
       "string/trimend": {
         "content": "`trimEnd`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "trimEnd()",
         "slug": "string/trimend"
       },
       "string/trimstart": {
         "content": "`trimStart`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "trimStart()",
         "slug": "string/trimstart"
       },
       "string/valueof": {
         "content": "`valueOf`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "valueOf",
         "slug": "string/valueof"
       }
@@ -862,381 +2241,1009 @@
     "array": {
       "array/arrayfrom": {
         "content": "Hi :) It's `Array.from`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "green"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "green"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "Array.from()",
         "slug": "array/arrayfrom"
       },
       "array/arrayfromasync": {
         "content": "Hi :) It's `Array.fromAsync`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "orange"
+          },
+          "average": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "Array.fromAsync()",
         "slug": "array/arrayfromasync"
       },
       "array/arrayisarray": {
         "content": "Привет :) `Array.isArray`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "Array.isArray()",
         "slug": "array/arrayisarray"
       },
       "array/arrayof": {
         "content": "Привет :) `Array.of`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "Array.of()",
         "slug": "array/arrayof"
       },
       "array/at": {
         "content": "Метод `at()` принимает значение в виде целого числа и возвращает элемент массива с данным индексом. В качестве аргумента метод принимает положительные и отрицательные числа. При отрицательном значении отсчёт происходит с конца массива.\r\n\r\n**Использование**\r\n\r\n```js\r\nconst arr = [1, 3, 2];\r\n\r\nconsole.log(arr.at(1)); // 3\r\nconsole.log(arr.at(-1)); // 2\r\nconsole.log(arr.at(3)); // undefined\r\n```\r\n\r\n**Внутренняя реализация**\r\n\r\n```js\r\n// this = arr\r\n\r\nArray.prototype.at = function(index) {\r\n  // 1. Преобразуем this в объект, если это необходимо\r\n  // Здесь это не нужно, так как arr уже является объектом\r\n  // (массив - это объект)\r\n  let obj = ToObject(this);\r\n\r\n  // 2. Получаем длину массивоподобного объекта obj\r\n  let len = LengthOfArrayLike(obj);\r\n\r\n  // 3. Преобразуем полученный индекс в целое число (или бесконечность)\r\n  let relativeIndex = ToIntegerOrInfinity(index);\r\n\r\n  // 4. Если relativeIndex >= 0, устанавливаем k = relativeIndex\r\n  // 5. Иначе устанавливаем k = len + relativeIndex\r\n  let k = (relativeIndex >= 0) ? relativeIndex : (len + relativeIndex);\r\n\r\n  // 6. Если k выходит за пределы arr, возвращаем undefined\r\n  if (k < 0 || k >= len) {\r\n    return undefined;\r\n  }\r\n\r\n  // 7. Возвращаем значение, полученное из объекта obj по ключу k\r\n  return Get(obj, !ToString(𝔽(k)));\r\n};\r\n```\r\n",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "green",
+        "tc": {
+          "best": {
+            "title": "O(1)",
+            "color": "green"
+          },
+          "average": {
+            "title": "O(1)",
+            "color": "green"
+          },
+          "worst": {
+            "title": "O(1)",
+            "color": "green"
+          }
+        },
+        "sc": {
+          "title": "O(1)",
+          "color": "green"
+        },
         "esLink": "https://262.ecma-international.org/#sec-array.prototype.at",
         "title": "at()",
         "slug": "array/at"
       },
       "array/concat": {
         "content": "Метод `concat()` возвращает новый массив, состоящий из массива, на котором он был вызван, соединённого с другими массивами и/или значениями, переданными в качестве аргументов.\r\n\r\n**Использование**\r\n\r\n```js\r\nconst arr1 = ['a', 'b', 'c'];\r\nconst arr2 = ['d', 'e', 'f'];\r\nconst g = 'g';\r\nconst arr3 = arr1.concat(arr2, g);\r\n\r\nconsole.log(arr3); // ['a', 'b', 'c', 'd', 'e', 'f', 'g']\r\n```\r\n\r\n**Внутренняя реализация**\r\n\r\n```js\r\n// this = arr1\r\n\r\nArray.prototype.concat = function(...items) {\r\n  // 1. Преобразуем this в объект, если это необходимо\r\n  // Здесь это не нужно, так как arr1 уже является объектом\r\n  // (массив - это объект)\r\n  let obj = ToObject(this);\r\n\r\n  // 2. Создаем новый массив A длины 0\r\n  let A = ArraySpeciesCreate(obj, 0);\r\n\r\n  // 3. Инициализируем счетчик n\r\n  let n = 0;\r\n\r\n  // 4. Добавляем obj в начало items\r\n  items.unshift(obj);\r\n\r\n  // 5. Для каждого элемента E в items\r\n  for (const E of items) {\r\n    // a. Проверяем, расширяем ли элемент\r\n    let spreadable = IsConcatSpreadable(E);\r\n\r\n    // b. Если расширяем\r\n    if (spreadable === true) {\r\n      // i. Получаем длину массивоподобного объекта E\r\n      let len = LengthOfArrayLike(E);\r\n\r\n      // ii. Проверяем, не превысит ли длина нового массива максимальное значение\r\n      if (n + len > 2**53 - 1) {\r\n        throw new TypeError(\"Concatenation result exceeds the maximum array length\");\r\n      }\r\n\r\n      // iii. Инициализируем счетчик k\r\n      let k = 0;\r\n\r\n      // iv. Повторяем, пока k < len\r\n      while (k < len) {\r\n        // 1. Получаем строковое представление индекса k\r\n        let Pk = ToString(𝔽(k));\r\n\r\n        // 2. Проверяем, существует ли свойство с индексом k в E\r\n        let exists = HasProperty(E, Pk);\r\n\r\n        // 3. Если свойство существует\r\n        if (exists === true) {\r\n          // a. Получаем подэлемент под индексом k\r\n          let subElement = Get(E, Pk);\r\n\r\n          // b. Добавляем подэлемент в новый массив\r\n          CreateDataPropertyOrThrow(A, ToString(𝔽(n)), subElement);\r\n        }\r\n\r\n        // 4. Увеличиваем счетчик n и k\r\n        n = n + 1;\r\n        k = k + 1;\r\n      }\r\n    } else {\r\n      // c. Если нерасширяем\r\n      // i. Добавляем элемент E в новый массив\r\n      CreateDataPropertyOrThrow(A, ToString(𝔽(n)), E);\r\n\r\n      // ii. Увеличиваем счетчик n\r\n      n = n + 1;\r\n    }\r\n  }\r\n\r\n  // 6. Устанавливаем длину нового массива в значение n\r\n  Set(A, \"length\", 𝔽(n), true);\r\n\r\n  // 7. Возвращаем новый массив\r\n  return A;\r\n};\r\n```",
-        "tc": "O(n * m)",
-        "tcColor": "limegreen",
-        "sc": "O(n * m)",
-        "scColor": "limegreen",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
         "esLink": "https://262.ecma-international.org/#sec-array.prototype.concat",
         "title": "concat()",
         "slug": "array/concat"
       },
       "array/copywithin": {
         "content": "Привет :) Это метод `copyWithin`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(1)",
+            "color": "green"
+          },
+          "average": {
+            "title": "O(n)",
+            "color": "lightgreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "copyWithin()",
         "slug": "array/copywithin"
       },
       "array/entries": {
         "content": "ru `entries`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "entries()",
         "slug": "array/entries"
       },
       "array/every": {
         "content": "`every`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "every()",
         "slug": "array/every"
       },
       "array/fill": {
         "content": "`fill`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "fill()",
         "slug": "array/fill"
       },
       "array/filter": {
         "content": "`filter`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "filter()",
         "slug": "array/filter"
       },
       "array/find": {
         "content": "`find`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "find()",
         "slug": "array/find"
       },
       "array/findindex": {
         "content": "`findIndex`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "findIndex()",
         "slug": "array/findindex"
       },
       "array/findlast": {
         "content": "`findLast`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "findLast()",
         "slug": "array/findlast"
       },
       "array/findlastindex": {
         "content": "Привет :) Это метод `findLastIndex`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "findLastIndex()",
         "slug": "array/findlastindex"
       },
       "array/flat": {
         "content": "`flat`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "flat()",
         "slug": "array/flat"
       },
       "array/flatmap": {
         "content": "`flatMap`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "flatMap()",
         "slug": "array/flatmap"
       },
       "array/foreach": {
         "content": "`forEach`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "forEach()",
         "slug": "array/foreach"
       },
       "array/includes": {
         "content": "`includes`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "includes()",
         "slug": "array/includes"
       },
       "array/indexof": {
         "content": "`indexOf`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "indexOf()",
         "slug": "array/indexof"
       },
       "array/join": {
         "content": "Привет :) Это метод `join`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "join()",
         "slug": "array/join"
       },
       "array/keys": {
         "content": "`keys`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "keys()",
         "slug": "array/keys"
       },
       "array/lastindexof": {
         "content": "Привет :) Это метод `lastIndexOf`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "lastIndexOf()",
         "slug": "array/lastindexof"
       },
       "array/map": {
         "content": "`map`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "map()",
         "slug": "array/map"
       },
       "array/pop": {
         "content": "`pop`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "pop()",
         "slug": "array/pop"
       },
       "array/push": {
         "content": "`push`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "push()",
         "slug": "array/push"
       },
       "array/reduce": {
         "content": "`reduce`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "reduce()",
         "slug": "array/reduce"
       },
       "array/reduceright": {
         "content": "Привет :) Это метод `reduceRight`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "reduceRight()",
         "slug": "array/reduceright"
       },
       "array/reverse": {
         "content": "`reverse`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "reverse()",
         "slug": "array/reverse"
       },
       "array/shift": {
         "content": "`shift`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "shift()",
         "slug": "array/shift"
       },
       "array/slice": {
         "content": "`slice`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "slice()",
         "slug": "array/slice"
       },
       "array/some": {
         "content": "`some`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "some()",
         "slug": "array/some"
       },
       "array/sort": {
         "content": "Привет :) Это метод `sort`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "sort()",
         "slug": "array/sort"
       },
       "array/splice": {
         "content": "`splice`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "splice()",
         "slug": "array/splice"
       },
       "array/tolocalestring": {
         "content": "Привет :) Это метод `toLocaleString`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "toLocaleString()",
         "slug": "array/tolocalestring"
       },
       "array/toreversed": {
         "content": "`toReversed`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "toReversed()",
         "slug": "array/toreversed"
       },
       "array/tosorted": {
         "content": "`toSorted`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "toSorted()",
         "slug": "array/tosorted"
       },
       "array/tospliced": {
         "content": "`toSpliced`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "toSpliced()",
         "slug": "array/tospliced"
       },
       "array/tostring": {
         "content": "`toString`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "toString()",
         "slug": "array/tostring"
       },
       "array/unshift": {
         "content": "`unshift`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "unshift()",
         "slug": "array/unshift"
       },
       "array/values": {
         "content": "`values`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "values()",
         "slug": "array/values"
       },
       "array/with": {
         "content": "`with`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "with()",
         "slug": "array/with"
       }
@@ -1244,474 +3251,1225 @@
     "string": {
       "string/anchor": {
         "content": "`anchor`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "anchor()",
         "slug": "string/anchor"
       },
       "string/at": {
         "content": "`at`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "at()",
         "slug": "string/at"
       },
       "string/big": {
         "content": "`big`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "big()",
         "slug": "string/big"
       },
       "string/blink": {
         "content": "`blink`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "blink()",
         "slug": "string/blink"
       },
       "string/bold": {
         "content": "`bold`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "bold()",
         "slug": "string/bold"
       },
       "string/charat": {
         "content": "`charAt`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "charAt()",
         "slug": "string/charat"
       },
       "string/charcodeat": {
         "content": "`charCodeAt`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "charCodeAt()",
         "slug": "string/charcodeat"
       },
       "string/codepointat": {
         "content": "`codePointAt`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "codePointAt()",
         "slug": "string/codepointat"
       },
       "string/concat": {
         "content": "`concat`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "concat()",
         "slug": "string/concat"
       },
       "string/endswith": {
         "content": "`endsWith`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "endsWith()",
         "slug": "string/endswith"
       },
       "string/fixed": {
         "content": "`fixed`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "fixed()",
         "slug": "string/fixed"
       },
       "string/fontcolor": {
         "content": "`fontcolor`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "fontcolor()",
         "slug": "string/fontcolor"
       },
       "string/fontsize": {
         "content": "`fontsize`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "fontsize()",
         "slug": "string/fontsize"
       },
       "string/includes": {
         "content": "`includes`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "includes()",
         "slug": "string/includes"
       },
       "string/indexof": {
         "content": "`indexOf`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "indexOf()",
         "slug": "string/indexof"
       },
       "string/iswellformed": {
         "content": "`isWellFormed`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "isWellFormed()",
         "slug": "string/iswellformed"
       },
       "string/italics": {
         "content": "`italics`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "italics()",
         "slug": "string/italics"
       },
       "string/lastindexof": {
         "content": "`lastIndexOf`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "lastIndexOf()",
         "slug": "string/lastindexof"
       },
       "string/link": {
         "content": "`link`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "link()",
         "slug": "string/link"
       },
       "string/localecompare": {
         "content": "`localeCompare`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "localeCompare()",
         "slug": "string/localecompare"
       },
       "string/match": {
         "content": "`match`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "match()",
         "slug": "string/match"
       },
       "string/matchall": {
         "content": "`matchAll`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "matchAll()",
         "slug": "string/matchall"
       },
       "string/normalize": {
         "content": "`normalize`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "normalize()",
         "slug": "string/normalize"
       },
       "string/padend": {
         "content": "`padEnd`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "padEnd()",
         "slug": "string/padend"
       },
       "string/padstart": {
         "content": "`padStart`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "padStart()",
         "slug": "string/padstart"
       },
       "string/repeat": {
         "content": "`repeat`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "repeat()",
         "slug": "string/repeat"
       },
       "string/replace": {
         "content": "`replace`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "replace()",
         "slug": "string/replace"
       },
       "string/replaceall": {
         "content": "`replaceAll`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "replaceAll()",
         "slug": "string/replaceall"
       },
       "string/search": {
         "content": "`search`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "search()",
         "slug": "string/search"
       },
       "string/slice": {
         "content": "Привет :) Это метод `slice`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "slice()",
         "slug": "string/slice"
       },
       "string/small": {
         "content": "`small`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "small()",
         "slug": "string/small"
       },
       "string/split": {
         "content": "Привет :) Это метод `split`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "split()",
         "slug": "string/split"
       },
       "string/startswith": {
         "content": "`startsWith`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "startsWith()",
         "slug": "string/startswith"
       },
       "string/strike": {
         "content": "`strike`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "strike()",
         "slug": "string/strike"
       },
       "string/stringfromcharcode": {
         "content": "`String.fromCharCode`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "String.fromCharCode()",
         "slug": "string/stringfromcharcode"
       },
       "string/stringfromcodepoint": {
         "content": "`String.fromCodePoint`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "String.fromCodePoint()",
         "slug": "string/stringfromcodepoint"
       },
       "string/stringraw": {
         "content": "`String.raw`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "String.raw()",
         "slug": "string/stringraw"
       },
       "string/sub": {
         "content": "`sub`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "sub()",
         "slug": "string/sub"
       },
       "string/substr": {
         "content": "`substr`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "substr()",
         "slug": "string/substr"
       },
       "string/substring": {
         "content": "`substring`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "substring()",
         "slug": "string/substring"
       },
       "string/sup": {
         "content": "`sup`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
-        "deprecated": true,
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "sup()",
         "slug": "string/sup"
       },
       "string/tolocalelowercase": {
         "content": "`toLocaleLowerCase`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "toLocaleLowerCase()",
         "slug": "string/tolocalelowercase"
       },
       "string/tolocaleuppercase": {
         "content": "`toLocaleUpperCase`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "toLocaleUpperCase()",
         "slug": "string/tolocaleuppercase"
       },
       "string/tolowercase": {
         "content": "`toLowerCase`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "toLowerCase()",
         "slug": "string/tolowercase"
       },
       "string/tostring": {
         "content": "`toString`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "toString()",
         "slug": "string/tostring"
       },
       "string/touppercase": {
         "content": "`toUpperCase`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "toUpperCase()",
         "slug": "string/touppercase"
       },
       "string/towellformed": {
         "content": "`toWellFormed`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "toWellFormed()",
         "slug": "string/towellformed"
       },
       "string/trim": {
         "content": "`trim`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "trim()",
         "slug": "string/trim"
       },
       "string/trimend": {
         "content": "`trimEnd`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "trimEnd()",
         "slug": "string/trimend"
       },
       "string/trimstart": {
         "content": "`trimStart`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "trimStart()",
         "slug": "string/trimstart"
       },
       "string/valueof": {
         "content": "`valueOf`.",
-        "tc": "O(1)",
-        "tcColor": "green",
-        "sc": "O(1)",
-        "scColor": "Green",
+        "tc": {
+          "best": {
+            "title": "O(n + m)",
+            "color": "lightgreen"
+          },
+          "average": {
+            "title": "O(n + m)",
+            "color": "limegreen"
+          },
+          "worst": {
+            "title": "O(n * m)",
+            "color": "limegreen"
+          }
+        },
+        "sc": {
+          "title": "O(n * m)",
+          "color": "limegreen"
+        },
+        "esLink": "",
         "title": "valueOf",
         "slug": "string/valueof"
       }
