@@ -9,6 +9,7 @@ import Deprecated from "../components/Deprecated";
 import githubSvg from "../svg/github.svg";
 import { useUnit } from "effector-react";
 import $store from "../store";
+import Code from "../components/Code";
 
 const ItemTitleBlock = styled.div`
   margin-bottom: 0.5rem;
@@ -28,23 +29,22 @@ const ItemTitle = styled.h1`
 
 const MarkdownBlock = styled.div`
   font-family: "InterRegular";
-  letter-spacing: 0.5px;
+  letter-spacing: 0.2px;
   width: 100%;
   line-height: 1.8;
   text-align: justify;
 
-  p {
-    font-size: 1.3rem;
+  code:not(pre code) {
+    background-color: var(--description-bg-color);
+    padding: 3px 5px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: 1px solid var(--main-color);
+    user-select: text;
   }
 
-  code {
-    font-family: "InterSemiBold";
-    font-size: 0.9rem;
-    color: var(--main-color);
-    border: 1px solid var(--main-color);
-    background-color: var(--description-bg-color);
-    padding: 3px 6px;
-    border-radius: 4px;
+  p {
+    font-size: 1.1rem;
   }
 
   & * {
@@ -90,7 +90,7 @@ const ComplexityBlock = styled.div`
 `;
 
 const GithubIcon = styled.img.attrs({
-  src: `${githubSvg}`
+  src: `${githubSvg}`,
 })`
   width: 24px;
 `;
@@ -99,10 +99,10 @@ const GithubLink = styled.a`
   margin-top: 1.5rem;
   display: flex;
   align-items: center;
-  gap: .75rem;
+  gap: 0.75rem;
   background-color: var(--description-bg-color);
   width: max-content;
-  padding: .75rem;
+  padding: 0.75rem;
   border-radius: 8px;
   color: var(--main-color);
 `;
@@ -116,10 +116,13 @@ const ItemDescription = () => {
   const { title, content, tc, tcColor, sc, scColor, deprecated } = item;
 
   const capitalizedDs = ds.charAt(0).toUpperCase() + ds.slice(1);
-  const linkToGithub = `https://github.com/mrmar99/jsComplexity/edit/master/src/content/${capitalizedDs}/${title.replaceAll('.', '-')}/${language}.md`;
+  const linkToGithub = `https://github.com/mrmar99/jsComplexity/edit/master/src/content/${capitalizedDs}/${title.replaceAll(
+    ".",
+    "-"
+  )}/${language}.md`;
   const editOnGithubText = {
     ru: "Редактировать на GitHub",
-    en: "Edit on GitHub"
+    en: "Edit on GitHub",
   };
 
   return (
@@ -129,10 +132,8 @@ const ItemDescription = () => {
         <>
           <HeaderBlock>
             <ItemTitleBlock>
-              <ItemTitle>
-                {title}
-              </ItemTitle>
-              { deprecated && <Deprecated /> }
+              <ItemTitle>{title}</ItemTitle>
+              {deprecated && <Deprecated />}
             </ItemTitleBlock>
             <Complexities>
               <ComplexityTooltip type="tc">
@@ -148,7 +149,17 @@ const ItemDescription = () => {
             </Complexities>
           </HeaderBlock>
           <MarkdownBlock>
-            <Markdown>{content}</Markdown>
+            <Markdown
+              options={{
+                overrides: {
+                  pre: {
+                    component: Code,
+                  }
+                }
+              }}
+            >
+              {content}
+            </Markdown>
           </MarkdownBlock>
           <GithubLink href={linkToGithub} target="_blank">
             <GithubIcon />

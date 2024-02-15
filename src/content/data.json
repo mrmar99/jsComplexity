@@ -38,11 +38,11 @@
         "slug": "array/arrayof"
       },
       "array/at": {
-        "content": "Hi :) It's `at`.",
+        "content": "The **`at()`** method of Array instances takes an integer value and returns the item at that index, allowing for positive and negative integers. Negative integers count back from the last item in the array.\r\n",
         "tc": "O(1)",
         "tcColor": "green",
         "sc": "O(1)",
-        "scColor": "Green",
+        "scColor": "green",
         "title": "at()",
         "slug": "array/at"
       },
@@ -895,11 +895,11 @@
         "slug": "array/arrayof"
       },
       "array/at": {
-        "content": "Привет :) Это метод `at`.",
+        "content": "> Метод `at()` принимает значение в виде целого числа и возвращает элемент массива с данным индексом. В качестве аргумента метод принимает положительные и отрицательные числа. При отрицательном значении отсчёт происходит с конца массива.\r\n\r\n```js\r\nconst array1 = [5, 12, 8, 130, 44];\r\n\r\nlet index = 2;\r\n\r\nconsole.log(`An index of ${index} returns ${array1.at(index)}`);\r\n// Expected output: \"An index of 2 returns 8\"\r\n\r\nindex = -2;\r\n\r\nconsole.log(`An index of ${index} returns ${array1.at(index)}`);\r\n// Expected output: \"An index of -2 returns 130\"\r\n```\r\n",
         "tc": "O(1)",
         "tcColor": "green",
         "sc": "O(1)",
-        "scColor": "Green",
+        "scColor": "green",
         "title": "at()",
         "slug": "array/at"
       },
