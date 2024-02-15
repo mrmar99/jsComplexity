@@ -1,10 +1,10 @@
 :root {
-  --bg-color: #14171c;
-  --description-bg-color: #0E0F12;
-  --main-color: #F4F4F4;
-  --secondary-color: #6179A8;
-  --secondary-color-hover: #51699d;
-  --red-color: #f43939;
+  --bg-color: rgb(19, 22, 27);
+  --description-bg-color: rgb(14, 15, 18);
+  --main-color: rgb(244, 244, 244);
+  --secondary-color: rgb(97, 121, 168);
+  --secondary-color-hover: rgb(81, 105, 157);
+  --red-color: rgb(244, 57, 57);
 }
 
 * {

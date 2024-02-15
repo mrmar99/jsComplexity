@@ -36,7 +36,7 @@ const PreBlock = styled(SyntaxHighlighter)`
 const CopyButton = styled.button`
   font-family: "InterRegular";
   position: absolute;
-  background-color: var(--description-bg-color);
+  background-color: transparent;
   top: 0.25rem;
   right: 0.5rem;
   padding: 0.25rem 0.5rem;

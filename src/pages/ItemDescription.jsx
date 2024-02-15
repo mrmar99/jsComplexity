@@ -45,6 +45,7 @@ const MarkdownBlock = styled.div`
 
   p {
     font-size: 1.1rem;
+    margin: 1rem 0;
   }
 
   & * {
