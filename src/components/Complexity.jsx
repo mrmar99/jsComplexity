@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { v4 as uuidv4 } from 'uuid';
 
 const ScComplexityBadge = styled.div`
   display: flex;
@@ -98,13 +99,11 @@ const Complexity = (props) => {
       }
     }
 
-    console.log(complexities)
-
     return (
       <TcComplexityBadge>
         {complexities.map(({ title, color, size }) => {
           return (
-            <TcComplexitySubBadge $color={validColors[color]} $size={size ? size : 1}>
+            <TcComplexitySubBadge key={uuidv4()} $color={validColors[color]} $size={size ? size : 1}>
               {title}
             </TcComplexitySubBadge>
           );

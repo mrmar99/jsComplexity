@@ -9,13 +9,13 @@
       "color": "lightgreen"
     },
     "worst": {
-      "title": "O(n * m)",
-      "color": "limegreen"
+      "title": "O(n²)",
+      "color": "red"
     }
   },
   "sc": {
-    "title": "O(n * m)",
-    "color": "limegreen"
+    "title": "O(n)",
+    "color": "lightgreen"
   },
-  "esLink": ""
+  "esLink": "https://262.ecma-international.org/#sec-array.prototype.copywithin"
 }

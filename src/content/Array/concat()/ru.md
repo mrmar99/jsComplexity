@@ -14,7 +14,9 @@ console.log(arr3); // ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 **Внутренняя реализация**
 
 ```js
-// this = arr1
+// n = arr1.length
+// m = items.length
+// k = items[i].length (max)
 
 Array.prototype.concat = function(...items) {
   // 1. Преобразуем this в объект, если это необходимо

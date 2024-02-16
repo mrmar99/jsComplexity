@@ -2,15 +2,15 @@
   "tc": {
     "best": {
       "title": "O(n + m)",
-      "color": "lightgreen"
+      "color": "limegreen"
     },
     "average": {
       "title": "O(n + m)",
       "color": "limegreen"
     },
     "worst": {
-      "title": "O(n * m)",
-      "color": "limegreen"
+      "title": "O(n + m * k)",
+      "color": "orange"
     }
   },
   "sc": {

@@ -126,15 +126,15 @@
         "tc": {
           "best": {
             "title": "O(n + m)",
-            "color": "lightgreen"
+            "color": "limegreen"
           },
           "average": {
             "title": "O(n + m)",
             "color": "limegreen"
           },
           "worst": {
-            "title": "O(n * m)",
-            "color": "limegreen"
+            "title": "O(n + m * k)",
+            "color": "orange"
           }
         },
         "sc": {
@@ -157,15 +157,15 @@
             "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
-            "color": "limegreen"
+            "title": "O(n²)",
+            "color": "red"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(n)",
+          "color": "lightgreen"
         },
-        "esLink": "",
+        "esLink": "https://262.ecma-international.org/#sec-array.prototype.copywithin",
         "title": "copyWithin()",
         "slug": "array/copywithin"
       },
@@ -2360,19 +2360,19 @@
         "slug": "array/at"
       },
       "array/concat": {
-        "content": "Метод `concat()` возвращает новый массив, состоящий из массива, на котором он был вызван, соединённого с другими массивами и/или значениями, переданными в качестве аргументов.\r\n\r\n**Использование**\r\n\r\n```js\r\nconst arr1 = ['a', 'b', 'c'];\r\nconst arr2 = ['d', 'e', 'f'];\r\nconst g = 'g';\r\nconst arr3 = arr1.concat(arr2, g);\r\n\r\nconsole.log(arr3); // ['a', 'b', 'c', 'd', 'e', 'f', 'g']\r\n```\r\n\r\n**Внутренняя реализация**\r\n\r\n```js\r\n// this = arr1\r\n\r\nArray.prototype.concat = function(...items) {\r\n  // 1. Преобразуем this в объект, если это необходимо\r\n  // Здесь это не нужно, так как arr1 уже является объектом\r\n  // (массив - это объект)\r\n  let obj = ToObject(this);\r\n\r\n  // 2. Создаем новый массив A длины 0\r\n  let A = ArraySpeciesCreate(obj, 0);\r\n\r\n  // 3. Инициализируем счетчик n\r\n  let n = 0;\r\n\r\n  // 4. Добавляем obj в начало items\r\n  items.unshift(obj);\r\n\r\n  // 5. Для каждого элемента E в items\r\n  for (const E of items) {\r\n    // a. Проверяем, расширяем ли элемент\r\n    let spreadable = IsConcatSpreadable(E);\r\n\r\n    // b. Если расширяем\r\n    if (spreadable === true) {\r\n      // i. Получаем длину массивоподобного объекта E\r\n      let len = LengthOfArrayLike(E);\r\n\r\n      // ii. Проверяем, не превысит ли длина нового массива максимальное значение\r\n      if (n + len > 2**53 - 1) {\r\n        throw new TypeError(\"Concatenation result exceeds the maximum array length\");\r\n      }\r\n\r\n      // iii. Инициализируем счетчик k\r\n      let k = 0;\r\n\r\n      // iv. Повторяем, пока k < len\r\n      while (k < len) {\r\n        // 1. Получаем строковое представление индекса k\r\n        let Pk = ToString(𝔽(k));\r\n\r\n        // 2. Проверяем, существует ли свойство с индексом k в E\r\n        let exists = HasProperty(E, Pk);\r\n\r\n        // 3. Если свойство существует\r\n        if (exists === true) {\r\n          // a. Получаем подэлемент под индексом k\r\n          let subElement = Get(E, Pk);\r\n\r\n          // b. Добавляем подэлемент в новый массив\r\n          CreateDataPropertyOrThrow(A, ToString(𝔽(n)), subElement);\r\n        }\r\n\r\n        // 4. Увеличиваем счетчик n и k\r\n        n = n + 1;\r\n        k = k + 1;\r\n      }\r\n    } else {\r\n      // c. Если нерасширяем\r\n      // i. Добавляем элемент E в новый массив\r\n      CreateDataPropertyOrThrow(A, ToString(𝔽(n)), E);\r\n\r\n      // ii. Увеличиваем счетчик n\r\n      n = n + 1;\r\n    }\r\n  }\r\n\r\n  // 6. Устанавливаем длину нового массива в значение n\r\n  Set(A, \"length\", 𝔽(n), true);\r\n\r\n  // 7. Возвращаем новый массив\r\n  return A;\r\n};\r\n```",
+        "content": "Метод `concat()` возвращает новый массив, состоящий из массива, на котором он был вызван, соединённого с другими массивами и/или значениями, переданными в качестве аргументов.\r\n\r\n**Использование**\r\n\r\n```js\r\nconst arr1 = ['a', 'b', 'c'];\r\nconst arr2 = ['d', 'e', 'f'];\r\nconst g = 'g';\r\nconst arr3 = arr1.concat(arr2, g);\r\n\r\nconsole.log(arr3); // ['a', 'b', 'c', 'd', 'e', 'f', 'g']\r\n```\r\n\r\n**Внутренняя реализация**\r\n\r\n```js\r\n// n = arr1.length\r\n// m = items.length\r\n// k = items[i].length (max)\r\n\r\nArray.prototype.concat = function(...items) {\r\n  // 1. Преобразуем this в объект, если это необходимо\r\n  // Здесь это не нужно, так как arr1 уже является объектом\r\n  // (массив - это объект)\r\n  let obj = ToObject(this);\r\n\r\n  // 2. Создаем новый массив A длины 0\r\n  let A = ArraySpeciesCreate(obj, 0);\r\n\r\n  // 3. Инициализируем счетчик n\r\n  let n = 0;\r\n\r\n  // 4. Добавляем obj в начало items\r\n  items.unshift(obj);\r\n\r\n  // 5. Для каждого элемента E в items\r\n  for (const E of items) {\r\n    // a. Проверяем, расширяем ли элемент\r\n    let spreadable = IsConcatSpreadable(E);\r\n\r\n    // b. Если расширяем\r\n    if (spreadable === true) {\r\n      // i. Получаем длину массивоподобного объекта E\r\n      let len = LengthOfArrayLike(E);\r\n\r\n      // ii. Проверяем, не превысит ли длина нового массива максимальное значение\r\n      if (n + len > 2**53 - 1) {\r\n        throw new TypeError(\"Concatenation result exceeds the maximum array length\");\r\n      }\r\n\r\n      // iii. Инициализируем счетчик k\r\n      let k = 0;\r\n\r\n      // iv. Повторяем, пока k < len\r\n      while (k < len) {\r\n        // 1. Получаем строковое представление индекса k\r\n        let Pk = ToString(𝔽(k));\r\n\r\n        // 2. Проверяем, существует ли свойство с индексом k в E\r\n        let exists = HasProperty(E, Pk);\r\n\r\n        // 3. Если свойство существует\r\n        if (exists === true) {\r\n          // a. Получаем подэлемент под индексом k\r\n          let subElement = Get(E, Pk);\r\n\r\n          // b. Добавляем подэлемент в новый массив\r\n          CreateDataPropertyOrThrow(A, ToString(𝔽(n)), subElement);\r\n        }\r\n\r\n        // 4. Увеличиваем счетчик n и k\r\n        n = n + 1;\r\n        k = k + 1;\r\n      }\r\n    } else {\r\n      // c. Если нерасширяем\r\n      // i. Добавляем элемент E в новый массив\r\n      CreateDataPropertyOrThrow(A, ToString(𝔽(n)), E);\r\n\r\n      // ii. Увеличиваем счетчик n\r\n      n = n + 1;\r\n    }\r\n  }\r\n\r\n  // 6. Устанавливаем длину нового массива в значение n\r\n  Set(A, \"length\", 𝔽(n), true);\r\n\r\n  // 7. Возвращаем новый массив\r\n  return A;\r\n};\r\n```",
         "tc": {
           "best": {
             "title": "O(n + m)",
-            "color": "lightgreen"
+            "color": "limegreen"
           },
           "average": {
             "title": "O(n + m)",
             "color": "limegreen"
           },
           "worst": {
-            "title": "O(n * m)",
-            "color": "limegreen"
+            "title": "O(n + m * k)",
+            "color": "orange"
           }
         },
         "sc": {
@@ -2384,7 +2384,7 @@
         "slug": "array/concat"
       },
       "array/copywithin": {
-        "content": "Привет :) Это метод `copyWithin`.",
+        "content": "Метод `copyWithin()` копирует последовательность элементов массива внутри него в позицию, начинающуюся по индексу `target`. Копия берётся по индексам, задаваемым вторым и третьим аргументами `start` и `end` (могут быть отрицательными, тогда отсчет происходит с конца массива). Аргумент `end` является необязательным и по умолчанию равен длине массива.\r\n\r\n**Использование**\r\n\r\n```js\r\nconst arr1 = [1, 2, 3, 4, 5];\r\narr1.copyWithin(0, 3);\r\n// [4, 5, 3, 4, 5]\r\n\r\nconst arr2 = [1, 2, 3, 4, 5];\r\narr2.copyWithin(0, 3, 4);\r\n// [4, 2, 3, 4, 5]\r\n\r\nconst arr3 = [1, 2, 3, 4, 5];\r\narr3.copyWithin(0, -2, -1);\r\n// [4, 2, 3, 4, 5]\r\n```\r\n\r\n**Внутренняя реализация**\r\n\r\n```js\r\n// n = arr.length\r\n// m = items.length\r\n// k = items[i].length (max)\r\n\r\nArray.prototype.copyWithin = function(target, start, end = this.length) {\r\n  // 1. Преобразуем this в объект, если это необходимо\r\n  // Здесь это не нужно, так как arr уже является объектом\r\n  // (массив - это объект)\r\n  let obj = ToObject(this);\r\n\r\n  // 2. Получаем длину массивоподобного объекта\r\n  let len = LengthOfArrayLike(obj);\r\n\r\n  // 3. Создаем relativeTarget = target, преобразованный в целое число или бесконечность\r\n  let relativeTarget = ToIntegerOrInfinity(target);\r\n\r\n  // 4-6. Вычисляем индекс to (куда будем копировать)\r\n  let to;\r\n\r\n  if (relativeTarget === -Infinity) {\r\n    to = 0;\r\n  } else if (relativeTarget < 0) { // если target отрицательный\r\n    to = max(len + relativeTarget, 0);\r\n  } else {\r\n    to = min(relativeTarget, len);\r\n  }\r\n\r\n  // 7. Создаем relativeStart = start, преобразованный в целое число или бесконечность\r\n  let relativeStart = ToIntegerOrInfinity(start);\r\n\r\n  // 8-10. Вычисляем начальный индекс для копирования\r\n  let from;\r\n\r\n  if (relativeStart === -Infinity) {\r\n    from = 0;\r\n  } else if (relativeStart < 0) {\r\n    from = max(len + relativeStart, 0);\r\n  } else {\r\n    from = min(relativeStart, len);\r\n  }\r\n\r\n  // 11. Если end равен undefined, то relativeEnd = len,\r\n  // иначе преобразуем end в целое число или бексконечность\r\n  let relativeEnd;\r\n  if (end === undefined) {\r\n    relativeEnd = len;\r\n  } else {\r\n    relativeEnd = ToIntegerOrInfinity(end);\r\n  }\r\n\r\n  // 12-14. Вычисляем конечный индекс для копирования\r\n  let final;\r\n  if (relativeEnd === -Infinity) {\r\n    final = 0;\r\n  } else if (relativeEnd < 0) {\r\n    final = max(len + relativeEnd, 0);\r\n  } else {\r\n    final = min(relativeEnd, len);\r\n  }\r\n\r\n  // 15. Вычисляем количество элементов для копирования\r\n  let count = min(final - from, len - to);\r\n\r\n  // 16-17. Определяем направление копирования\r\n  let direction;\r\n  if (from < to && to < from + count) {\r\n    direction = -1;\r\n    from = from + count - 1;\r\n    to = to + count - 1;\r\n  } else {\r\n    direction = 1;\r\n  }\r\n\r\n  // 18. Копируем элементы в новый диапазон\r\n  while (count > 0) {\r\n    let fromkey = ToString(𝔽(from));\r\n    let toKey = ToString(𝔽(to));\r\n    let fromPresent = HasProperty(obj, fromKey);\r\n\r\n    if (fromPresent === true) {\r\n      // если элемент есть в obj, копируем его\r\n      let fromVal = Get(obj, fromKey);\r\n      Set(obj, toKey, fromVal, true);\r\n    } else {\r\n      // если элемент отсутствует, удаляем соответствующий\r\n      // элемент в новом диапазоне\r\n      DeletePropertyOrThrow(obj, toKey);\r\n    }\r\n\r\n    from += direction;\r\n    to += direction;\r\n    count--;\r\n  }\r\n\r\n  // 19. Возвращаем измененный массив\r\n  return obj;\r\n};\r\n```",
         "tc": {
           "best": {
             "title": "O(1)",
@@ -2395,15 +2395,15 @@
             "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
-            "color": "limegreen"
+            "title": "O(n²)",
+            "color": "red"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(n)",
+          "color": "lightgreen"
         },
-        "esLink": "",
+        "esLink": "https://262.ecma-international.org/#sec-array.prototype.copywithin",
         "title": "copyWithin()",
         "slug": "array/copywithin"
       },
