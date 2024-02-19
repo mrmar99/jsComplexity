@@ -17,5 +17,5 @@
     "title": "O(1)",
     "color": "green"
   },
-  "esLink": "https://262.ecma-international.org/#sec-array.prototype.at"
+  "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.at"
 }

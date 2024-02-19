@@ -1,21 +1,21 @@
 {
   "tc": {
     "best": {
-      "title": "O(1)",
-      "color": "green"
+      "title": "O(n)",
+      "color": "lightgreen"
     },
     "average": {
       "title": "O(n)",
       "color": "lightgreen"
     },
     "worst": {
-      "title": "O(n²)",
-      "color": "red"
+      "title": "O(n)",
+      "color": "lightgreen"
     }
   },
   "sc": {
-    "title": "O(n)",
-    "color": "lightgreen"
+    "title": "O(1)",
+    "color": "green"
   },
-  "esLink": "https://262.ecma-international.org/#sec-array.prototype.copywithin"
+  "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.copywithin"
 }

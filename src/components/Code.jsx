@@ -31,6 +31,13 @@ const CopyButton = styled.button`
   cursor: pointer;
   border: 1px solid var(--main-color);
   color: var(--main-color);
+  opacity: 0.6;
+  transition: opacity .1s ease-in;
+
+  &:hover {
+    opacity: 1;
+    transition: opacity .1s ease-out;
+  }
 `;
 
 const PreBlock = styled(SyntaxHighlighter)`
