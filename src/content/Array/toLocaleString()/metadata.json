@@ -1,21 +1,21 @@
 {
   "tc": {
     "best": {
-      "title": "O(n + m)",
+      "title": "O(n)",
       "color": "lightgreen"
     },
     "average": {
-      "title": "O(n + m)",
-      "color": "limegreen"
+      "title": "O(n)",
+      "color": "lightgreen"
     },
     "worst": {
-      "title": "O(n * m)",
-      "color": "limegreen"
+      "title": "O(n)",
+      "color": "lightgreen"
     }
   },
   "sc": {
-    "title": "O(n * m)",
-    "color": "limegreen"
+    "title": "O(n)",
+    "color": "lightgreen"
   },
-  "esLink": ""
+  "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.tolocalestring"
 }

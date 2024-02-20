@@ -43,6 +43,11 @@ const MarkdownBlock = styled.div`
     user-select: text;
   }
 
+  a {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+  }
+
   p {
     font-size: 1.1rem;
     margin: 1rem 0;
