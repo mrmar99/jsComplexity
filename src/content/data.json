@@ -786,8 +786,8 @@
           }
         },
         "sc": {
-          "title": "O(n log(n))",
-          "color": "limegreen"
+          "title": "O(n)",
+          "color": "lightgreen"
         },
         "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.sort",
         "title": "sort()",
@@ -882,8 +882,8 @@
           }
         },
         "sc": {
-          "title": "O(n log(n))",
-          "color": "limegreen"
+          "title": "O(n)",
+          "color": "lightgreen"
         },
         "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.tosorted",
         "title": "toSorted()",
@@ -3024,8 +3024,8 @@
           }
         },
         "sc": {
-          "title": "O(n log(n))",
-          "color": "limegreen"
+          "title": "O(n)",
+          "color": "lightgreen"
         },
         "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.sort",
         "title": "sort()",
@@ -3120,8 +3120,8 @@
           }
         },
         "sc": {
-          "title": "O(n log(n))",
-          "color": "limegreen"
+          "title": "O(n)",
+          "color": "lightgreen"
         },
         "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.tosorted",
         "title": "toSorted()",
