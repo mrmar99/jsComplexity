@@ -14,7 +14,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
@@ -38,7 +38,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
@@ -134,12 +134,12 @@
           },
           "worst": {
             "title": "O(n + m * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
           "title": "O(n + m * k)",
-          "color": "limegreen"
+          "color": "orange"
         },
         "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.concat",
         "title": "concat()",
@@ -206,7 +206,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
@@ -254,7 +254,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
@@ -278,7 +278,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
@@ -302,7 +302,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
@@ -326,7 +326,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
@@ -350,7 +350,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
@@ -398,7 +398,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
@@ -422,7 +422,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
@@ -566,7 +566,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
@@ -638,7 +638,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
@@ -662,7 +662,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
@@ -758,7 +758,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
@@ -2252,7 +2252,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
@@ -2276,7 +2276,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
@@ -2372,12 +2372,12 @@
           },
           "worst": {
             "title": "O(n + m * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
           "title": "O(n + m * k)",
-          "color": "limegreen"
+          "color": "orange"
         },
         "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.concat",
         "title": "concat()",
@@ -2444,7 +2444,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
@@ -2492,7 +2492,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
@@ -2516,7 +2516,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
@@ -2540,7 +2540,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
@@ -2564,7 +2564,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
@@ -2588,7 +2588,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
@@ -2636,7 +2636,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
@@ -2660,7 +2660,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
@@ -2804,7 +2804,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
@@ -2876,7 +2876,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
@@ -2900,7 +2900,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {
@@ -2996,7 +2996,7 @@
           },
           "worst": {
             "title": "O(n * k)",
-            "color": "limegreen"
+            "color": "orange"
           }
         },
         "sc": {

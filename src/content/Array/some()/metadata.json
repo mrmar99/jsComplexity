@@ -10,7 +10,7 @@
     },
     "worst": {
       "title": "O(n * k)",
-      "color": "limegreen"
+      "color": "orange"
     }
   },
   "sc": {
