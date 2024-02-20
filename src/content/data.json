@@ -221,23 +221,23 @@
         "content": "`fill`.",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(1)",
+          "color": "green"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.fill",
         "title": "fill()",
         "slug": "array/fill"
       },
@@ -245,23 +245,23 @@
         "content": "`filter`.",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
+            "title": "O(n * k)",
             "color": "limegreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(n)",
+          "color": "lightgreen"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.filter",
         "title": "filter()",
         "slug": "array/filter"
       },
@@ -269,23 +269,23 @@
         "content": "`find`.",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
+            "title": "O(n * k)",
             "color": "limegreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(1)",
+          "color": "green"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.find",
         "title": "find()",
         "slug": "array/find"
       },
@@ -293,23 +293,23 @@
         "content": "`findIndex`.",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
+            "title": "O(n * k)",
             "color": "limegreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(1)",
+          "color": "green"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.findindex",
         "title": "findIndex()",
         "slug": "array/findindex"
       },
@@ -317,23 +317,23 @@
         "content": "`findLast`.",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
+            "title": "O(n * k)",
             "color": "limegreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(1)",
+          "color": "green"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.findlast",
         "title": "findLast()",
         "slug": "array/findlast"
       },
@@ -341,23 +341,23 @@
         "content": "Hi :) It's `findLastIndex`.",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
+            "title": "O(n * k)",
             "color": "limegreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(1)",
+          "color": "green"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.findlastindex",
         "title": "findLastIndex()",
         "slug": "array/findlastindex"
       },
@@ -365,23 +365,23 @@
         "content": "`flat`.",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(n)",
+          "color": "lightgreen"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.flat",
         "title": "flat()",
         "slug": "array/flat"
       },
@@ -389,23 +389,23 @@
         "content": "`flatMap`.",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
+            "title": "O(n * k)",
             "color": "limegreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(n)",
+          "color": "lightgreen"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.flatmap",
         "title": "flatMap()",
         "slug": "array/flatmap"
       },
@@ -413,23 +413,23 @@
         "content": "`forEach`.",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
+            "title": "O(n * k)",
             "color": "limegreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(1)",
+          "color": "green"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.foreach",
         "title": "forEach()",
         "slug": "array/foreach"
       },
@@ -437,23 +437,23 @@
         "content": "`includes`.",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(1)",
+          "color": "green"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.includes",
         "title": "includes()",
         "slug": "array/includes"
       },
@@ -461,23 +461,23 @@
         "content": "`indexOf`.",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(1)",
+          "color": "green"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.indexof",
         "title": "indexOf()",
         "slug": "array/indexof"
       },
@@ -485,23 +485,23 @@
         "content": "Hi :) It's  `join`.",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(n)",
+          "color": "lightgreen"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.join",
         "title": "join()",
         "slug": "array/join"
       },
@@ -509,23 +509,23 @@
         "content": "`keys`.",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(1)",
+          "color": "green"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.keys",
         "title": "keys()",
         "slug": "array/keys"
       },
@@ -533,23 +533,23 @@
         "content": "Hi :) It's  `lastIndexOf`.",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(1)",
+          "color": "green"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.lastindexof",
         "title": "lastIndexOf()",
         "slug": "array/lastindexof"
       },
@@ -965,23 +965,23 @@
         "content": "`values`.",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(1)",
+          "color": "green"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.values",
         "title": "values()",
         "slug": "array/values"
       },
@@ -2408,7 +2408,7 @@
         "slug": "array/copywithin"
       },
       "array/entries": {
-        "content": "Метод `entries()` возвращает новый объект итератора массива `Array Iterator`, содержащий пары ключ-значение для каждого индекса в массиве.\r\n\r\n##### Использование\r\n\r\n```js\r\nconst arr = ['a', 'b', 'c'];\r\nconst arrEntries = arr.entries();\r\n\r\nconsole.log(arrEntries.next().value); // [0, 'a']\r\nconsole.log(arrEntries.next().value); // [1, 'b']\r\nconsole.log(arrEntries.next().value); // [2, 'c']\r\n```\r\n\r\n##### Примерная внутренняя реализация\r\n\r\n```js\r\n// n = arr.length\r\n\r\n// this = arr\r\nArray.prototype.entries = function() {\r\n  // 1. Преобразуем this в объект, если это необходимо\r\n  // Здесь это не нужно, так как arr уже является объектом\r\n  // (массив - это объект)\r\n  let obj = ToObject(this);\r\n\r\n  // 2. Создаем и возвращаем новый объект итератора для массива O. \r\n  // Итератор будет возвращать пары ключ-значение для каждого \r\n  // элемента в массиве. Параметр key+value указывает, что итератор \r\n  // должен возвращать как ключ, так и значение для каждого элемента.\r\n  return CreateArrayIterator(obj, key+value);\r\n};\r\n```\r\n\r\n##### ECMAScript\r\n\r\n```js\r\n1. Let O be ? ToObject(this value).\r\n2. Return CreateArrayIterator(O, key+value).\r\n```",
+        "content": "Метод `entries()` возвращает новый объект итератора массива `Array Iterator`, содержащий пары ключ-значение для каждого индекса в массиве.\r\n\r\n##### Использование\r\n\r\n```js\r\nconst arr = ['a', 'b', 'c'];\r\nconst arrEntries = arr.entries();\r\n\r\nconsole.log(arrEntries.next().value); // [0, 'a']\r\nconsole.log(arrEntries.next().value); // [1, 'b']\r\nconsole.log(arrEntries.next().value); // [2, 'c']\r\n```\r\n\r\n##### Примерная внутренняя реализация\r\n\r\n```js\r\n// n = arr.length\r\n\r\n// this = arr\r\nArray.prototype.entries = function() {\r\n  // 1. Преобразуем this в объект, если это необходимо\r\n  let obj = ToObject(this);\r\n\r\n  // 2. Создаем и возвращаем новый объект итератора для массива obj. \r\n  // Итератор будет возвращать пары ключ-значение для каждого \r\n  // элемента в массиве. Параметр key+value указывает, что итератор \r\n  // должен возвращать как ключ, так и значение для каждого элемента.\r\n  return CreateArrayIterator(obj, key+value);\r\n};\r\n```\r\n\r\n##### ECMAScript\r\n\r\n```js\r\n1. Let O be ? ToObject(this value).\r\n2. Return CreateArrayIterator(O, KEY+VALUE).\r\n```",
         "tc": {
           "best": {
             "title": "O(n)",
@@ -2456,338 +2456,338 @@
         "slug": "array/every"
       },
       "array/fill": {
-        "content": "`fill`.",
+        "content": "Метод `fill()` заполняет все элементы массива от начального до конечного индексов одним значением.\r\n\r\n##### Использование\r\n\r\n```js\r\nconst array1 = [1, 2, 3, 4];\r\n\r\nconsole.log(array1.fill(0, 2, 4));\r\n// [1, 2, 0, 0]\r\n\r\nconsole.log(array1.fill(5, 1));\r\n// [1, 5, 5, 5]\r\n\r\nconsole.log(array1.fill(6));\r\n// [6, 6, 6, 6]\r\n```\r\n\r\n##### Примерная внутренняя реализация\r\n\r\n```js\r\n// n = arr.length\r\n\r\n// this = arr\r\nArray.prototype.fill = function(value, start, end) {\r\n  // 1. Преобразуем this в объект, если это необходимо\r\n  let obj = ToObject(this);\r\n\r\n  // 2. Получаем длину массивоподобного объекта obj\r\n  let len = LengthOfArrayLike(obj);\r\n\r\n  // 3. Преобразуем полученный индекс начала заполнения в целое число (или бесконечность)\r\n  let relativeStart = ToIntegerOrInfinity(start);\r\n\r\n  // 4. Если relativeStart = -∞, устанавливаем k = 0\r\n  // 5. Иначе, если relativeStart < 0, устанавливаем k = max(len + relativeStart, 0)\r\n  // 6. Иначе, устанавливаем k = min(relativeStart, len)\r\n  let k = (relativeStart === -Infinity) ? 0 : ((relativeStart < 0) ? Math.max(len + relativeStart, 0) : Math.min(relativeStart, len));\r\n\r\n  // 7. Если конечный индекс не определен, устанавливаем relativeEnd = len\r\n  // Иначе, устанавливаем relativeEnd = ToIntegerOrInfinity(end)\r\n  let relativeEnd = (end === undefined) ? len : ToIntegerOrInfinity(end);\r\n\r\n  // 8. Если relativeEnd = -∞, устанавливаем final = 0\r\n  // 9. Иначе, если relativeEnd < 0, устанавливаем final = max(len + relativeEnd, 0)\r\n  // 10. Иначе, устанавливаем final = min(relativeEnd, len)\r\n  let final = (relativeEnd === -Infinity) ? 0 : ((relativeEnd < 0) ? Math.max(len + relativeEnd, 0) : Math.min(relativeEnd, len));\r\n\r\n  // 11. Пока k < final,\r\n  //   a. Получаем строковое представление текущего индекса Pk\r\n  //   b. Устанавливаем значение value по ключу Pk в объекте obj\r\n  //   c. Увеличиваем k на 1\r\n  while (k < final) {\r\n    let Pk = ToString(𝔽(k));\r\n    Set(obj, Pk, value, true);\r\n    k++;\r\n  }\r\n\r\n  // 12. Возвращаем объект obj\r\n  return obj;\r\n};\r\n```\r\n\r\n##### ECMAScript\r\n\r\n```js\r\n1. Let O be ? ToObject(this value).\r\n2. Let len be ? LengthOfArrayLike(O).\r\n3. Let relativeStart be ? ToIntegerOrInfinity(start).\r\n4. If relativeStart = -∞, let k be 0.\r\n5. Else if relativeStart < 0, let k be max(len + relativeStart, 0).\r\n6. Else, let k be min(relativeStart, len).\r\n7. If end is undefined, let relativeEnd be len; else let relativeEnd be ? ToIntegerOrInfinity(end).\r\n8. If relativeEnd = -∞, let final be 0.\r\n9. Else if relativeEnd < 0, let final be max(len + relativeEnd, 0).\r\n10. Else, let final be min(relativeEnd, len).\r\n11. Repeat, while k < final,\r\n  a. Let Pk be ! ToString(𝔽(k)).\r\n  b. Perform ? Set(O, Pk, value, true).\r\n  c. Set k to k + 1.\r\n12. Return O.\r\n```",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(1)",
+          "color": "green"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.fill",
         "title": "fill()",
         "slug": "array/fill"
       },
       "array/filter": {
-        "content": "`filter`.",
+        "content": "Метод `filter()` создаёт новый массив со всеми элементами, прошедшими проверку, задаваемую в передаваемой функции.\r\n\r\n##### Использование\r\n\r\n```js\r\nconst arr = ['spray', 'elite', 'exuberant', 'destruction', 'present'];\r\n\r\nconst result = arr.filter((word) => word.length > 6);\r\n\r\nconsole.log(result);\r\n// [\"exuberant\", \"destruction\", \"present\"]\r\n```\r\n\r\n##### Примерная внутренняя реализация\r\n\r\n```js\r\n// n = arr.length\r\n// k = callbackfn\r\n\r\n// this = arr\r\nArray.prototype.filter = function(callbackfn, thisArg) {\r\n  // 1. Преобразуем this в объект, если это необходимо\r\n  let obj = ToObject(this);\r\n\r\n  // 2. Получаем длину массивоподобного объекта obj\r\n  let len = LengthOfArrayLike(obj);\r\n\r\n  // 3. Проверяем, является ли callbackfn функцией\r\n  if (IsCallable(callbackfn) === false) {\r\n    throw new TypeError('Callback is not a function');\r\n  }\r\n\r\n  // 4. Создаем новый массив A с использованием ArraySpeciesCreate\r\n  let A = ArraySpeciesCreate(obj, 0);\r\n\r\n  // 5-6. Устанавливаем начальные значения k и to\r\n  let k = 0;\r\n  let to = 0;\r\n\r\n  // 7. Повторяем, пока k < len\r\n  while (k < len) {\r\n    // a. Получаем ключ Pk\r\n    let Pk = ToString(𝔽(k));\r\n\r\n    // b. Проверяем, присутствует ли свойство с ключом Pk в объекте obj\r\n    let kPresent = HasProperty(obj, Pk);\r\n\r\n    // c. Если свойство присутствует, выполняем следующие шаги\r\n    if (kPresent) {\r\n      // i. Получаем значение свойства kValue\r\n      let kValue = Get(obj, Pk);\r\n\r\n      // ii. Вызываем callbackfn с аргументами kValue, 𝔽(k), и obj\r\n      let selected = ToBoolean(Call(callbackfn, thisArg, [kValue, 𝔽(k), obj]));\r\n\r\n      // iii. Если результат вызова callbackfn равен true, выполняем следующие шаги\r\n      if (selected) {\r\n        // 1. Добавляем свойство в массив A с ключом to и значением kValue\r\n        CreateDataPropertyOrThrow(A, ToString(𝔽(to)), kValue);\r\n\r\n        // 2. Увеличиваем to на 1\r\n        to = to + 1;\r\n      }\r\n    }\r\n\r\n    // d. Увеличиваем k на 1\r\n    k = k + 1;\r\n  }\r\n\r\n  // 8. Возвращаем массив A\r\n  return A;\r\n};\r\n```\r\n\r\n##### ECMAScript\r\n\r\n```js\r\n1. Let O be ? ToObject(this value).\r\n2. Let len be ? LengthOfArrayLike(O).\r\n3. If IsCallable(callbackfn) is false, throw a TypeError exception.\r\n4. Let A be ? ArraySpeciesCreate(O, 0).\r\n5. Let k be 0.\r\n6. Let to be 0.\r\n7. Repeat, while k < len,\r\n  a. Let Pk be ! ToString(𝔽(k)).\r\n  b. Let kPresent be ? HasProperty(O, Pk).\r\n  c. If kPresent is true, then\r\n    i. Let kValue be ? Get(O, Pk).\r\n    ii. Let selected be ToBoolean(? Call(callbackfn, thisArg, « kValue, 𝔽(k), O »)).\r\n    iii. If selected is true, then\r\n      1. Perform ? CreateDataPropertyOrThrow(A, ! ToString(𝔽(to)), kValue).\r\n      2. Set to to to + 1.\r\n  d. Set k to k + 1.\r\n8. Return A.\r\n```",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
+            "title": "O(n * k)",
             "color": "limegreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(n)",
+          "color": "lightgreen"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.filter",
         "title": "filter()",
         "slug": "array/filter"
       },
       "array/find": {
-        "content": "`find`.",
+        "content": "Метод `find()` возвращает **значение** первого найденного в массиве элемента, которое удовлетворяет условию, переданному в callback функции. В противном случае возвращается `undefined`.\r\n\r\n##### Использование\r\n\r\n```js\r\nfunction isPrime(element, index, array) {\r\n  var start = 2;\r\n  while (start <= Math.sqrt(element)) {\r\n    if (element % start++ < 1) {\r\n      return false;\r\n    }\r\n  }\r\n  return element > 1;\r\n}\r\n\r\nconsole.log([4, 6, 8, 12].find(isPrime)); // undefined\r\nconsole.log([4, 5, 8, 12].find(isPrime)); // 5\r\n```\r\n\r\n##### Примерная внутренняя реализация\r\n\r\n```js\r\n// n = arr.length\r\n// k = predicate\r\n\r\n// this = arr\r\nArray.prototype.find = function(predicate, thisArg) {\r\n  // 1. Преобразуем this в объект, если это необходимо\r\n  let obj = ToObject(this);\r\n\r\n  // 2. Получаем длину массивоподобного объекта obj\r\n  let len = LengthOfArrayLike(obj);\r\n\r\n  // 3. Выполняем поиск с использованием предиката и заданного thisArg\r\n  let findRec = FindViaPredicate(obj, len, ASCENDING, predicate, thisArg);\r\n\r\n  // 4. Возвращаем значение найденного элемента\r\n  return findRec.[[Value]];\r\n};\r\n```\r\n\r\n##### ECMAScript\r\n\r\n```js\r\n1. Let O be ? ToObject(this value).\r\n2. Let len be ? LengthOfArrayLike(O).\r\n3. Let findRec be ? FindViaPredicate(O, len, ASCENDING, predicate, thisArg).\r\n4. Return findRec.[[Value]].\r\n```",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
+            "title": "O(n * k)",
             "color": "limegreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(1)",
+          "color": "green"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.find",
         "title": "find()",
         "slug": "array/find"
       },
       "array/findindex": {
-        "content": "`findIndex`.",
+        "content": "Метод `findIndex()` возвращает **индекс** в массиве, если элемент удовлетворяет условию проверяющей функции. В противном случае возвращается -1.\r\n\r\n##### Использование\r\n\r\n```js\r\nfunction isPrime(element, index, array) {\r\n  var start = 2;\r\n  while (start <= Math.sqrt(element)) {\r\n    if (element % start++ < 1) {\r\n      return false;\r\n    }\r\n  }\r\n  return element > 1;\r\n}\r\n\r\nconsole.log([4, 6, 8, 12].findIndex(isPrime)); // -1\r\nconsole.log([4, 6, 7, 12].findIndex(isPrime)); // 2\r\n```\r\n\r\n##### Примерная внутренняя реализация\r\n\r\n```js\r\n// n = arr.length\r\n// k = predicate\r\n\r\n// this = arr\r\nArray.prototype.findIndex = function(predicate, thisArg) {\r\n  // 1. Преобразуем this в объект, если это необходимо\r\n  let obj = ToObject(this);\r\n\r\n  // 2. Получаем длину массивоподобного объекта obj\r\n  let len = LengthOfArrayLike(obj);\r\n\r\n  // 3. Выполняем поиск с использованием предиката и заданного thisArg\r\n  let findRec = FindViaPredicate(obj, len, ASCENDING, predicate, thisArg);\r\n\r\n  // 4. Возвращаем индекс найденного элемента или -1, если элемент не найден\r\n  return findRec.[[Index]];\r\n};\r\n```\r\n\r\n##### ECMAScript\r\n\r\n```js\r\n1. Let O be ? ToObject(this value).\r\n2. Let len be ? LengthOfArrayLike(O).\r\n3. Let findRec be ? FindViaPredicate(O, len, ASCENDING, predicate, thisArg).\r\n4. Return findRec.[[Index]].\r\n```",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
+            "title": "O(n * k)",
             "color": "limegreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(1)",
+          "color": "green"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.findindex",
         "title": "findIndex()",
         "slug": "array/findindex"
       },
       "array/findlast": {
-        "content": "`findLast`.",
+        "content": "Метод `findLast()` итерируется по массиву в обратном порядке и возвращает **значение** первого найденного в массиве элемента, которое удовлетворяет условию, переданному в callback функции. В противном случае возвращается `undefined`.\r\n\r\n##### Использование\r\n\r\n```js\r\nconst array1 = [5, 12, 50, 130, 44];\r\n\r\nconst found = array1.findLast((element) => element > 45);\r\n\r\nconsole.log(found);\r\n// Expected output: 130\r\n```\r\n\r\n##### Примерная внутренняя реализация\r\n\r\n```js\r\n// n = arr.length\r\n// k = predicate\r\n\r\n// this = arr\r\nArray.prototype.findLast = function(predicate, thisArg) {\r\n  // 1. Преобразуем this в объект, если это необходимо\r\n  let obj = ToObject(this);\r\n\r\n  // 2. Получаем длину массивоподобного объекта obj\r\n  let len = LengthOfArrayLike(obj);\r\n\r\n  // 3. Выполняем поиск с использованием предиката \r\n  // и заданного thisArg в порядке убывания индексов\r\n  let findRec = FindViaPredicate(obj, len, DESCENDING, predicate, thisArg);\r\n\r\n  // 4. Возвращаем значение, найденное в результате поиска\r\n  return findRec.[[Value]];\r\n};\r\n```\r\n\r\n##### ECMAScript\r\n\r\n```js\r\n1. Let O be ? ToObject(this value).\r\n2. Let len be ? LengthOfArrayLike(O).\r\n3. Let findRec be ? FindViaPredicate(O, len, DESCENDING, predicate, thisArg).\r\n4. Return findRec.[[Value]].\r\n```",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
+            "title": "O(n * k)",
             "color": "limegreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(1)",
+          "color": "green"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.findlast",
         "title": "findLast()",
         "slug": "array/findlast"
       },
       "array/findlastindex": {
-        "content": "Привет :) Это метод `findLastIndex`.",
+        "content": "Метод `findLastIndex()` итерируется по массиву в обратном порядке и возвращает **индекс** в массиве, если элемент удовлетворяет условию проверяющей функции. В противном случае возвращается -1.\r\n\r\n\r\n##### Использование\r\n\r\n```js\r\nconst arr = [5, 12, 50, 130, 44];\r\n\r\nconst isLargeNumber = (element) => element > 45;\r\n\r\nconsole.log(arr.findLastIndex(isLargeNumber));\r\n// 3\r\n// arr[3] -> 130\r\n```\r\n\r\n##### Примерная внутренняя реализация\r\n\r\n```js\r\n// n = arr.length\r\n// k = predicate\r\n\r\n// this = arr\r\nArray.prototype.findLastIndex = function(predicate, thisArg) {\r\n  // 1. Преобразуем this в объект, если это необходимо\r\n  let obj = ToObject(this);\r\n\r\n  // 2. Получаем длину массивоподобного объекта obj\r\n  let len = LengthOfArrayLike(obj);\r\n\r\n  // 3. Выполняем поиск с использованием предиката\r\n  // и заданного thisArg в порядке убывания индексов\r\n  let findRec = FindViaPredicate(obj, len, DESCENDING, predicate, thisArg);\r\n\r\n  // 4. Возвращаем индекс найденного элемента или -1, если элемент не найден\r\n  return findRec.[[Index]];\r\n};\r\n```\r\n\r\n##### ECMAScript\r\n\r\n```js\r\n1. Let O be ? ToObject(this value).\r\n2. Let len be ? LengthOfArrayLike(O).\r\n3. Let findRec be ? FindViaPredicate(O, len, DESCENDING, predicate, thisArg).\r\n4. Return findRec.[[Index]].\r\n```",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
+            "title": "O(n * k)",
             "color": "limegreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(1)",
+          "color": "green"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.findlastindex",
         "title": "findLastIndex()",
         "slug": "array/findlastindex"
       },
       "array/flat": {
-        "content": "`flat`.",
+        "content": "Метод `flat()` возвращает новый массив, в котором все элементы вложенных подмассивов были рекурсивно \"подняты\" на указанный уровень depth.\r\n\r\n##### Использование\r\n\r\n```js\r\nconst arr1 = [1, 2, [3, 4]];\r\narr1.flat();\r\n// [1, 2, 3, 4]\r\n\r\nconst arr2 = [1, 2, [3, 4, [5, 6]]];\r\narr2.flat();\r\n// [1, 2, 3, 4, [5, 6]]\r\n\r\nconst arr3 = [1, 2, [3, 4, [5, 6]]];\r\narr3.flat(2);\r\n// [1, 2, 3, 4, 5, 6]\r\n\r\nconst arr4 = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];\r\narr4.flat(Infinity);\r\n// [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\r\n```\r\n\r\n##### Примерная внутренняя реализация\r\n\r\n```js\r\n// n = A.length (результирующий массив)\r\n\r\n// this = arr\r\nArray.prototype.flat = function(depth) {\r\n  // 1. Преобразуем this в объект, если это необходимо\r\n  let obj = ToObject(this);\r\n\r\n  // 2. Получаем длину массивоподобного объекта obj\r\n  let sourceLen = LengthOfArrayLike(obj);\r\n\r\n  // 3. Если depth не определено, устанавливаем depthNum в 1\r\n  let depthNum = 1;\r\n\r\n  // 4. Если depth определено, преобразуем его в целое число\r\n  if (depth !== undefined) {\r\n    depthNum = ToIntegerOrInfinity(depth);\r\n\r\n    // 4a. Если depthNum < 0, устанавливаем depthNum в 0\r\n    if (depthNum < 0) {\r\n      depthNum = 0;\r\n    }\r\n  }\r\n\r\n  // 5. Создаем новый массив A\r\n  let A = ArraySpeciesCreate(obj, 0);\r\n\r\n  // 6. Выполняем процедуру сглаживания массива FlattenIntoArray\r\n  FlattenIntoArray(A, obj, sourceLen, 0, depthNum);\r\n\r\n  // 7. Возвращаем полученный массив A\r\n  return A;\r\n};\r\n```\r\n\r\n##### ECMAScript\r\n\r\n```js\r\n1. Let O be ? ToObject(this value).\r\n2. Let sourceLen be ? LengthOfArrayLike(O).\r\n3. Let depthNum be 1.\r\n4. If depth is not undefined, then\r\n  a. Set depthNum to ? ToIntegerOrInfinity(depth).\r\n  b. If depthNum < 0, set depthNum to 0.\r\n5. Let A be ? ArraySpeciesCreate(O, 0).\r\n6. Perform ? FlattenIntoArray(A, O, sourceLen, 0, depthNum).\r\n7. Return A.\r\n```",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(n)",
+          "color": "lightgreen"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.flat",
         "title": "flat()",
         "slug": "array/flat"
       },
       "array/flatmap": {
-        "content": "`flatMap`.",
+        "content": "Метод `flatMap()` сначала применяет функцию к каждому элементу, а затем преобразует полученный результат в плоскую структуру и помещает в новый массив. Это идентично `map` функции, с последующим применением функции `flat` с параметром `depth` (глубина) равным 1, но `flatMap` часто бывает полезным, так как работает немного более эффективно.\r\n\r\n##### Использование\r\n\r\n```js\r\nlet arr1 = [1, 2, 3, 4];\r\n\r\narr1.map((x) => [x * 2]);\r\n// [[2], [4], [6], [8]]\r\n\r\narr1.flatMap((x) => [x * 2]);\r\n// [2, 4, 6, 8]\r\n\r\n// выравнивается только один уровень\r\narr1.flatMap((x) => [[x * 2]]);\r\n// [[2], [4], [6], [8]]\r\n```\r\n\r\n##### Примерная внутренняя реализация\r\n\r\n```js\r\n// n = A.length (результирующий массив)\r\n// k = mapperFunction\r\n\r\n// this = arr\r\nArray.prototype.flatMap = function(mapperFunction, thisArg) {\r\n  // 1. Преобразуем this в объект, если это необходимо\r\n  let obj = ToObject(this);\r\n\r\n  // 2. Получаем длину массивоподобного объекта obj\r\n  let sourceLen = LengthOfArrayLike(obj);\r\n\r\n  // 3. Если mapperFunction не является callable, выбрасываем исключение TypeError\r\n  if (!IsCallable(mapperFunction)) {\r\n    throw new TypeError(\"mapperFunction is not callable\");\r\n  }\r\n\r\n  // 4. Создаем новый массив A с использованием ArraySpeciesCreate\r\n  let A = ArraySpeciesCreate(obj, 0);\r\n\r\n  // 5. Выполняем FlattenIntoArray для слияния элементов массива\r\n  FlattenIntoArray(A, obj, sourceLen, 0, 1, mapperFunction, thisArg);\r\n\r\n  // 6. Возвращаем новый массив A\r\n  return A;\r\n};\r\n```\r\n\r\n##### ECMAScript\r\n\r\n```js\r\n1. Let O be ? ToObject(this value).\r\n2. Let sourceLen be ? LengthOfArrayLike(O).\r\n3. If IsCallable(mapperFunction) is false, throw a TypeError exception.\r\n4. Let A be ? ArraySpeciesCreate(O, 0).\r\n5. Perform ? FlattenIntoArray(A, O, sourceLen, 0, 1, mapperFunction, thisArg).\r\n6. Return A.\r\n```",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
+            "title": "O(n * k)",
             "color": "limegreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(n)",
+          "color": "lightgreen"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.flatmap",
         "title": "flatMap()",
         "slug": "array/flatmap"
       },
       "array/foreach": {
-        "content": "`forEach`.",
+        "content": "Метод `forEach()` выполняет указанную функцию один раз для каждого элемента в массиве.\r\n\r\n##### Использование\r\n\r\n```js\r\nconst arr = ['a', 'b', 'c'];\r\n\r\narr.forEach((element) => console.log(element));\r\n\r\n// \"a\"\r\n// \"b\"\r\n// \"c\"\r\n```\r\n\r\n##### Примерная внутренняя реализация\r\n\r\n```js\r\n// n = arr.length\r\n// k = callbackfn\r\n\r\n// this = arr\r\nArray.prototype.forEach = function(callbackfn, thisArg) {\r\n  // 1. Преобразуем this в объект, если это необходимо\r\n  let obj = ToObject(this);\r\n\r\n  // 2. Получаем длину массивоподобного объекта obj\r\n  let len = LengthOfArrayLike(obj);\r\n\r\n  // 3. Проверяем, является ли callbackfn вызываемой функцией\r\n  if (IsCallable(callbackfn) === false) {\r\n    // Если нет, выбрасываем исключение TypeError\r\n    throw new TypeError();\r\n  }\r\n\r\n  // 4. Устанавливаем начальное значение счетчика k = 0\r\n  let k = 0;\r\n\r\n  // 5. Повторяем, пока k < len\r\n  while (k < len) {\r\n    // a. Получаем строковое представление k\r\n    let Pk = ToString(𝔽(k));\r\n\r\n    // b. Проверяем, есть ли свойство с ключом Pk в объекте obj\r\n    let kPresent = HasProperty(obj, Pk);\r\n\r\n    // c. Если свойство существует, выполняем следующие шаги\r\n    if (kPresent === true) {\r\n      // i. Получаем значение свойства по ключу Pk\r\n      let kValue = Get(obj, Pk);\r\n\r\n      // ii. Вызываем функцию callbackfn с аргументами kValue, 𝔽(k), obj\r\n      Call(callbackfn, thisArg, [kValue, 𝔽(k), obj]);\r\n    }\r\n\r\n    // d. Увеличиваем счетчик k на 1\r\n    k = k + 1;\r\n  }\r\n\r\n  // 6. Возвращаем undefined\r\n  return undefined;\r\n};\r\n```\r\n\r\n##### ECMAScript\r\n\r\n```js\r\n1. Let O be ? ToObject(this value).\r\n2. Let len be ? LengthOfArrayLike(O).\r\n3. If IsCallable(callbackfn) is false, throw a TypeError exception.\r\n4. Let k be 0.\r\n5. Repeat, while k < len,\r\n  a. Let Pk be ! ToString(𝔽(k)).\r\n  b. Let kPresent be ? HasProperty(O, Pk).\r\n  c. If kPresent is true, then\r\n    i. Let kValue be ? Get(O, Pk).\r\n    ii. Perform ? Call(callbackfn, thisArg, « kValue, 𝔽(k), O »).\r\n  d. Set k to k + 1.\r\n6. Return undefined.\r\n```",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
+            "title": "O(n * k)",
             "color": "limegreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(1)",
+          "color": "green"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.foreach",
         "title": "forEach()",
         "slug": "array/foreach"
       },
       "array/includes": {
-        "content": "`includes`.",
+        "content": "Метод `includes()` определяет, содержит ли массив определённый элемент, возвращая в зависимости от этого `true` или `false`.\r\n\r\n##### Использование\r\n\r\n```js\r\nconst arr = [1, 2, 3];\r\n\r\nconsole.log(arr.includes(2));\r\n// true\r\n\r\nconst pets = ['cat', 'dog', 'bat'];\r\n\r\nconsole.log(pets.includes('cat'));\r\n// true\r\n\r\nconsole.log(pets.includes('at'));\r\n// false\r\n```\r\n\r\n##### Примерная внутренняя реализация\r\n\r\n```js\r\n// n = arr.length\r\n\r\n// this = arr\r\nArray.prototype.includes = function(searchElement, fromIndex) {\r\n// 1. Преобразуем this в объект, если это необходимо\r\n  let obj = ToObject(this);\r\n\r\n  // 2. Получаем длину массивоподобного объекта obj\r\n  let len = LengthOfArrayLike(obj);\r\n\r\n  // 3. Если длина массива равна 0, возвращаем false\r\n  if (len === 0) {\r\n    return false;\r\n  }\r\n\r\n  // 4. Преобразуем величину fromIndex в целое число (или бесконечность)\r\n  let n = ToIntegerOrInfinity(fromIndex);\r\n\r\n  // 5. Проверка: если fromIndex не определен, устанавливаем n в 0\r\n  if (fromIndex === undefined) {\r\n    n = 0;\r\n  }\r\n\r\n  // 6. Если n = +∞, возвращаем false\r\n  // 7. Иначе, если n = -∞, устанавливаем n в 0\r\n  if (n === +Infinity) {\r\n    return false;\r\n  } else if (n === -Infinity) {\r\n    n = 0;\r\n  }\r\n\r\n  let k;\r\n  // 8. Если n >= 0, устанавливаем k = n\r\n  // 9. Иначе, устанавливаем k = len + n и если k < 0, устанавливаем k в 0\r\n  if (n >= 0) {\r\n    k = n;\r\n  } else {\r\n    k = len + n;\r\n\r\n    if (k < 0) {\r\n      k = 0;\r\n    }\r\n  }\r\n\r\n  // 10. Повторяем, пока k < len\r\n  while (k < len) {\r\n    // a. Получаем элемент массива с индексом k\r\n    let elementK = Get(obj, ToString(𝔽(k)));\r\n\r\n    // b. Если элементK равен searchElement, возвращаем true\r\n    if (SameValueZero(searchElement, elementK)) {\r\n      return true;\r\n    }\r\n\r\n    // c. Увеличиваем k на 1\r\n    k = k + 1;\r\n  }\r\n\r\n  // 11. Если не найдено совпадение, возвращаем false\r\n  return false;\r\n};\r\n```\r\n\r\n##### ECMAScript\r\n\r\n```js\r\n1. Let O be ? ToObject(this value).\r\n2. Let len be ? LengthOfArrayLike(O).\r\n3. If len = 0, return false.\r\n4. Let n be ? ToIntegerOrInfinity(fromIndex).\r\n5. Assert: If fromIndex is undefined, then n is 0.\r\n6. If n = +∞, return false.\r\n7. Else if n = -∞, set n to 0.\r\n8. If n ≥ 0, then\r\n  a. Let k be n.\r\n9. Else,\r\n  a. Let k be len + n.\r\n  b. If k < 0, set k to 0.\r\n10. Repeat, while k < len,\r\n  a. Let elementK be ? Get(O, ! ToString(𝔽(k))).\r\n  b. If SameValueZero(searchElement, elementK) is true, return true.\r\n  c. Set k to k + 1.\r\n11. Return false.\r\n```",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(1)",
+          "color": "green"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.includes",
         "title": "includes()",
         "slug": "array/includes"
       },
       "array/indexof": {
-        "content": "`indexOf`.",
+        "content": "Метод `indexOf()` возвращает первый индекс, по которому данный элемент может быть найден в массиве или -1, если такого индекса нет.\r\n\r\n##### Использование\r\n\r\n```js\r\nconst arr = [2, 5, 9];\r\narr.indexOf(2); // 0\r\narr.indexOf(7); // -1\r\narr.indexOf(9, 2); // 2\r\narr.indexOf(2, -1); // -1\r\narr.indexOf(2, -3); // 0\r\n```\r\n\r\n##### Примерная внутренняя реализация\r\n\r\n```js\r\n// n = arr.length\r\n\r\n// this = arr\r\nArray.prototype.indexOf = function(searchElement, fromIndex) {\r\n  // 1. Преобразуем this в объект, если это необходимо\r\n  let obj = ToObject(this);\r\n\r\n  // 2. Получаем длину массивоподобного объекта obj\r\n  let len = LengthOfArrayLike(obj);\r\n\r\n  // 3. Если длина массива равна 0, возвращаем -1\r\n  if (len === 0) {\r\n    return -1;\r\n  }\r\n\r\n  // 4. Преобразуем величину fromIndex в целое число (или бесконечность)\r\n  let n = ToIntegerOrInfinity(fromIndex);\r\n\r\n  // 5. Проверка: если fromIndex не определен, устанавливаем n в 0\r\n  if (fromIndex === undefined) {\r\n    n = 0;\r\n  }\r\n\r\n  // 6. Если n = +∞, возвращаем false\r\n  // 7. Иначе, если n = -∞, устанавливаем n в 0\r\n  if (n === +Infinity) {\r\n    return -1;\r\n  } else if (n === -Infinity) {\r\n    n = 0;\r\n  }\r\n\r\n  let k;\r\n  // 8. Если n ≥ 0, устанавливаем k = n\r\n  // 9. Иначе, устанавливаем k = len + n, если k < 0, устанавливаем k в 0\r\n  if (n >= 0) {\r\n    k = n;\r\n  } else {\r\n    k = len + n;\r\n\r\n    if (k < 0) {\r\n      k = 0;\r\n    }\r\n  }\r\n\r\n  // 10. Пока k < len\r\n  while (k < len) {\r\n    // a. Проверяем, есть ли свойство с ключом k\r\n    let kPresent = HasProperty(obj, ToString(𝔽(k)));\r\n\r\n    // b. Если свойство есть\r\n    if (kPresent) {\r\n      // i. Получаем значение элемента по ключу k\r\n      let elementK = Get(obj, ToString(𝔽(k)));\r\n\r\n      // ii. Если значения равны, возвращаем индекс k\r\n      if (IsStrictlyEqual(searchElement, elementK)) {\r\n        return 𝔽(k);\r\n      }\r\n    }\r\n\r\n    // c. Увеличиваем k на 1\r\n    k = k + 1;\r\n  }\r\n\r\n  // 11. Если ничего не найдено, возвращаем -1\r\n  return -1;\r\n};\r\n```\r\n\r\n##### ECMAScript\r\n\r\n```js\r\n1. Let O be ? ToObject(this value).\r\n2. Let len be ? LengthOfArrayLike(O).\r\n3. If len = 0, return -1𝔽.\r\n4. Let n be ? ToIntegerOrInfinity(fromIndex).\r\n5. Assert: If fromIndex is undefined, then n is 0.\r\n6. If n = +∞, return -1𝔽.\r\n7. Else if n = -∞, set n to 0.\r\n8. If n ≥ 0, then\r\n   a. Let k be n.\r\n9. Else,\r\n   a. Let k be len + n.\r\n   b. If k < 0, set k to 0.\r\n10. Repeat, while k < len,\r\n    a. Let kPresent be ? HasProperty(O, ! ToString(𝔽(k))).\r\n    b. If kPresent is true, then\r\n       i. Let elementK be ? Get(O, ! ToString(𝔽(k))).\r\n       ii. If IsStrictlyEqual(searchElement, elementK) is true, return 𝔽(k).\r\n    c. Set k to k + 1.\r\n11. Return -1𝔽.\r\n```",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(1)",
+          "color": "green"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.indexof",
         "title": "indexOf()",
         "slug": "array/indexof"
       },
       "array/join": {
-        "content": "Привет :) Это метод `join`.",
+        "content": "Метод `join()` объединяет все элементы массива (или массивоподобного объекта) в строку.\r\n\r\nМожно заметить, что во внутренней реализации метода используется конкатенация строк (`+=`), но, если бы мы осуществляли конкатенацию строк вручную в цикле, мы бы заметили, что она работает в несколько раз медленнее, чем метод `join()`. Это обусловлено тем, что движки оптимизируют метод `join()`. Однако, оптимизации могут различаться в зависимости от движка и конкретных условий, поэтому в некоторых сценариях конкатенация строк (`+=`) может работать быстрее метода `join()`.\r\n\r\n##### Использование\r\n\r\n```js\r\nconst elements = ['Fire', 'Air', 'Water'];\r\n\r\nconsole.log(elements.join());\r\n// \"Fire,Air,Water\"\r\n\r\nconsole.log(elements.join(''));\r\n// \"FireAirWater\"\r\n\r\nconsole.log(elements.join('-'));\r\n// \"Fire-Air-Water\"\r\n```\r\n\r\n##### Примерная внутренняя реализация\r\n\r\n```js\r\n// n = R.length (результирующая строка)\r\n\r\n// this = arr\r\nArray.prototype.join = function(separator) {\r\n  // 1. Преобразуем this в объект, если это необходимо\r\n  let obj = ToObject(this);\r\n\r\n  // 2. Получаем длину массивоподобного объекта obj\r\n  let len = LengthOfArrayLike(obj);\r\n\r\n  // 3. Если separator не определен, устанавливаем sep = \",\"\r\n  // 4. Иначе устанавливаем sep = separator\r\n  let sep = (separator === undefined) ? \",\" : ToString(separator);\r\n\r\n  // 5. Устанавливаем R как пустую строку\r\n  let R = \"\";\r\n\r\n  // 6. Устанавливаем k = 0\r\n  let k = 0;\r\n\r\n  // 7. Повторяем, пока k < len\r\n  while (k < len) {\r\n    // a. Если k > 0, добавляем sep к R\r\n    if (k > 0) {\r\n      R = R + sep;\r\n    }\r\n\r\n    // b. Получаем элемент по ключу k из объекта obj\r\n    let element = Get(obj, ToString(𝔽(k)));\r\n\r\n    // c. Если element равен undefined или null, устанавливаем next как пустую строку\r\n    //    Иначе, устанавливаем next как строковое представление элемента\r\n    let next = (element === undefined || element === null) ? \"\" : ToString(element);\r\n\r\n    // d. Добавляем next к R\r\n    R = R + next;\r\n\r\n    // e. Увеличиваем k на 1\r\n    k = k + 1;\r\n  }\r\n\r\n  // 8. Возвращаем R\r\n  return R;\r\n};\r\n```\r\n\r\n##### ECMAScript\r\n\r\n```js\r\n1. Let O be ? ToObject(this value).\r\n2. Let len be ? LengthOfArrayLike(O).\r\n3. If separator is undefined, let sep be \",\".\r\n4. Else, let sep be ? ToString(separator).\r\n5. Let R be the empty String.\r\n6. Let k be 0.\r\n7. Repeat, while k < len,\r\n  a. If k > 0, set R to the string-concatenation of R and sep.\r\n  b. Let element be ? Get(O, ! ToString(𝔽(k))).\r\n  c. If element is either undefined or null, let next be the empty String; otherwise, let next be ? ToString(element).\r\n  d. Set R to the string-concatenation of R and next.\r\n  e. Set k to k + 1.\r\n8. Return R.\r\n```",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(n)",
+          "color": "lightgreen"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.join",
         "title": "join()",
         "slug": "array/join"
       },
       "array/keys": {
-        "content": "`keys`.",
+        "content": "Метод `keys()` возвращает новый **итератор массива** `Array Iterator`, содержащий ключи каждого индекса в массиве.\r\n\r\n##### Использование\r\n\r\n```js\r\nconst arr = ['a', 'b', 'c'];\r\nconst iterator = arr.keys();\r\n\r\nfor (const key of iterator) {\r\n  console.log(key);\r\n}\r\n\r\n// 0\r\n// 1\r\n// 2\r\n```\r\n\r\n##### Примерная внутренняя реализация\r\n\r\n```js\r\n// n = arr.length\r\n\r\n// this = arr\r\nArray.prototype.keys = function() {\r\n  // 1. Преобразуем this в объект, если это необходимо\r\n  let obj = ToObject(this);\r\n\r\n  // 2. Создаем и возвращаем новый объект итератора для массива obj. \r\n  // Итератор будет возвращать ключ для каждого \r\n  // элемента в массиве. Параметр key указывает, что итератор \r\n  // должен возвращать только ключ для каждого элемента.\r\n  return CreateArrayIterator(obj, key);\r\n};\r\n```\r\n\r\n##### ECMAScript\r\n\r\n```js\r\n1. Let O be ? ToObject(this value).\r\n2. Return CreateArrayIterator(O, KEY).\r\n```",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(1)",
+          "color": "green"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.keys",
         "title": "keys()",
         "slug": "array/keys"
       },
       "array/lastindexof": {
-        "content": "Привет :) Это метод `lastIndexOf`.",
+        "content": "Метод `lastIndexOf()` возвращает последний индекс, по которому данный элемент может быть найден в массиве или -1, если такого индекса нет. Массив просматривается от конца к началу, начиная с индекса `fromIndex`.\r\n\r\n##### Использование\r\n\r\n```js\r\nconst animals = ['Dodo', 'Tiger', 'Penguin', 'Dodo'];\r\n\r\nconsole.log(animals.lastIndexOf('Dodo'));\r\n// 3\r\n\r\nconsole.log(animals.lastIndexOf('Tiger'));\r\n// 1\r\n```\r\n\r\n##### Примерная внутренняя реализация\r\n\r\n```js\r\n// n = arr.length\r\n\r\n// this = arr\r\nArray.prototype.lastIndexOf = function(searchElement, fromIndex) {\r\n  // 1. Преобразуем this в объект, если это необходимо\r\n  let obj = ToObject(this);\r\n\r\n  // 2. Получаем длину массивоподобного объекта obj\r\n  let len = LengthOfArrayLike(obj);\r\n\r\n  // 3. Если длина массива равна 0, возвращаем -1\r\n  if (len === 0) {\r\n    return -1;\r\n  }\r\n\r\n  // 4. Если задан fromIndex, преобразуем его в целое число (или бесконечность)\r\n  //    Иначе устанавливаем n = len - 1\r\n  let n = (fromIndex !== undefined) ? ToIntegerOrInfinity(fromIndex) : (len - 1);\r\n\r\n  // 5. Если n = -∞, возвращаем -1\r\n  if (n === -Infinity) {\r\n    return -1;\r\n  }\r\n\r\n  // 6. Если n ≥ 0, устанавливаем k = min(n, len - 1)\r\n  // 7. Иначе устанавливаем k = len + n\r\n  let k = (n >= 0) ? Math.min(n, len - 1) : (len + n);\r\n\r\n  // 8. Пока k ≥ 0\r\n  while (k >= 0) {\r\n    // a. Проверяем, есть ли свойство с ключом k в объекте obj\r\n    let kPresent = HasProperty(obj, ToString(𝔽(k)));\r\n\r\n    // b. Если свойство существует\r\n    if (kPresent) {\r\n      // i. Получаем значение элемента с ключом k\r\n      let elementK = Get(obj, ToString(𝔽(k)));\r\n\r\n      // ii. Если searchElement строго равен elementK, возвращаем k\r\n      if (IsStrictlyEqual(searchElement, elementK)) {\r\n        return 𝔽(k);\r\n      }\r\n    }\r\n\r\n    // c. Уменьшаем k на 1\r\n    k = k - 1;\r\n  }\r\n\r\n  // 9. Если не найдено, возвращаем -1\r\n  return -1;\r\n};\r\n```\r\n\r\n##### ECMAScript\r\n\r\n```js\r\n1. Let O be ? ToObject(this value).\r\n2. Let len be ? LengthOfArrayLike(O).\r\n3. If len = 0, return -1𝔽.\r\n4. If fromIndex is present, let n be ? ToIntegerOrInfinity(fromIndex); else let n be len - 1.\r\n5. If n = -∞, return -1𝔽.\r\n6. If n ≥ 0, then\r\n  a. Let k be min(n, len - 1).\r\n7. Else,\r\n  a. Let k be len + n.\r\n8. Repeat, while k ≥ 0,\r\n  a. Let kPresent be ? HasProperty(O, ! ToString(𝔽(k))).\r\n  b. If kPresent is true, then\r\n    i. Let elementK be ? Get(O, ! ToString(𝔽(k))).\r\n    ii. If IsStrictlyEqual(searchElement, elementK) is true, return 𝔽(k).\r\n  c. Set k to k - 1.\r\n9. Return -1𝔽.\r\n```",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(1)",
+          "color": "green"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.lastindexof",
         "title": "lastIndexOf()",
         "slug": "array/lastindexof"
       },
@@ -3200,26 +3200,26 @@
         "slug": "array/unshift"
       },
       "array/values": {
-        "content": "`values`.",
+        "content": "Метод `values()` возвращает новый объект итератора массива `Array Iterator`, содержащий значения для каждого индекса в массиве.\r\n\r\n##### Использование\r\n\r\n```js\r\n// 1.\r\nconst arr = [\"w\", \"y\", \"k\", \"o\", \"p\"];\r\nconst eArr = arr.values();\r\n\r\nfor (let letter of eArr) {\r\n  console.log(letter);\r\n}\r\n\r\n// или\r\n\r\nconsole.log(eArr.next().value);\r\nconsole.log(eArr.next().value);\r\nconsole.log(eArr.next().value);\r\nconsole.log(eArr.next().value);\r\nconsole.log(eArr.next().value);\r\n\r\n// w\r\n// y\r\n// k\r\n// o\r\n// p\r\n```\r\n\r\n##### Примерная внутренняя реализация\r\n\r\n```js\r\n// n = arr.length\r\n\r\n// this = arr\r\nArray.prototype.values = function() {\r\n  // 1. Преобразуем this в объект, если это необходимо\r\n  let obj = ToObject(this);\r\n\r\n  // 2. Создаем и возвращаем новый объект итератора для массива obj. \r\n  // Итератор будет возвращать значение для каждого \r\n  // элемента в массиве. Параметр value указывает, что итератор \r\n  // должен возвращать только значение для каждого элемента.\r\n  return CreateArrayIterator(obj, value);\r\n};\r\n```\r\n\r\n##### ECMAScript\r\n\r\n```js\r\n1. Let O be ? ToObject(this value).\r\n2. Return CreateArrayIterator(O, VALUE).\r\n```",
         "tc": {
           "best": {
-            "title": "O(n + m)",
+            "title": "O(n)",
             "color": "lightgreen"
           },
           "average": {
-            "title": "O(n + m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           },
           "worst": {
-            "title": "O(n * m)",
-            "color": "limegreen"
+            "title": "O(n)",
+            "color": "lightgreen"
           }
         },
         "sc": {
-          "title": "O(n * m)",
-          "color": "limegreen"
+          "title": "O(1)",
+          "color": "green"
         },
-        "esLink": "",
+        "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.values",
         "title": "values()",
         "slug": "array/values"
       },

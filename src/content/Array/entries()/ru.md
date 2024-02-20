@@ -19,11 +19,9 @@ console.log(arrEntries.next().value); // [2, 'c']
 // this = arr
 Array.prototype.entries = function() {
   // 1. Преобразуем this в объект, если это необходимо
-  // Здесь это не нужно, так как arr уже является объектом
-  // (массив - это объект)
   let obj = ToObject(this);
 
-  // 2. Создаем и возвращаем новый объект итератора для массива O. 
+  // 2. Создаем и возвращаем новый объект итератора для массива obj. 
   // Итератор будет возвращать пары ключ-значение для каждого 
   // элемента в массиве. Параметр key+value указывает, что итератор 
   // должен возвращать как ключ, так и значение для каждого элемента.
@@ -35,5 +33,5 @@ Array.prototype.entries = function() {
 
 ```js
 1. Let O be ? ToObject(this value).
-2. Return CreateArrayIterator(O, key+value).
+2. Return CreateArrayIterator(O, KEY+VALUE).
 ```
