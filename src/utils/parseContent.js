@@ -49,10 +49,22 @@ for (const filePath of filePaths) {
 
   const fileContent = fs.readFileSync(path, "utf-8");
 
+  const parsedMethodsSet = new Set();
+
+  const regex = /\b([A-Z][a-zA-Z0-9]*)\s*\(/g;
+  let match;
+  while ((match = regex.exec(fileContent)) !== null) {
+    parsedMethodsSet.add(match[1]);
+  }
+
+  const parsedMethodsArr = Array.from(parsedMethodsSet)
+    .filter(method => !/\./.test(method));
+
   if (!(language in result)) result[language] = {};
   if (!(ds in result[language])) result[language][ds] = {};
   result[language][ds][slug] = {};
   result[language][ds][slug]["content"] = fileContent;
+  result[language][ds][slug]["parsedMethods"] = parsedMethodsArr;
 
   if (!("metadata" in result[language][ds][slug])) {
     const metadataJsonPath = path.split("/").slice(0, -1);

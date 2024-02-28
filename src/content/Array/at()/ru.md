@@ -36,7 +36,7 @@ Array.prototype.at = function(index) {
   }
 
   // 7. Возвращаем значение, полученное из объекта obj по ключу k
-  return Get(obj, !ToString(𝔽(k)));
+  return Get(obj, ToString(𝔽(k)));
 };
 ```
 

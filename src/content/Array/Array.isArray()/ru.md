@@ -25,7 +25,7 @@ Array.isArray({ __proto__: Array.prototype });
 
 ```js
 Array.isArray = function(arg) {
-  return isArray(arg);
+  return IsArray(arg);
 };
 ```
 
