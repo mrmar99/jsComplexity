@@ -16,7 +16,7 @@ function parseFilePaths(directory) {
       } else {
         const relativePath = path.posix.relative(
           directory,
-          filePath.replaceAll("-", ".")
+          filePath
         );
 
         if (path.extname(filePath) === ".md") {
