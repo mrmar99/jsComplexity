@@ -1,0 +1,21 @@
+{
+  "tc": {
+    "best": {
+      "title": "O(n)",
+      "color": "lightgreen"
+    },
+    "average": {
+      "title": "O(n)",
+      "color": "lightgreen"
+    },
+    "worst": {
+      "title": "O(n * k)",
+      "color": "orange"
+    }
+  },
+  "sc": {
+    "title": "O(n)",
+    "color": "lightgreen"
+  },
+  "esLink": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.from"
+}

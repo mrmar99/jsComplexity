@@ -43,9 +43,9 @@ for (const filePath of filePaths) {
 
   const dirs = relativePath.split("/");
   const title = dirs.at(-2);
-  const ds = dirs.at(-3).toLowerCase();
+  const ds = dirs.at(-3);
 
-  const slug = ds.toLowerCase() + "/" + title.toLowerCase().replace(/[^\w-]+/g, "");
+  const slug = ds + "/" + title;
 
   const fileContent = fs.readFileSync(path, "utf-8");
 
@@ -54,7 +54,7 @@ for (const filePath of filePaths) {
   const regex = /\b([A-Z][a-zA-Z0-9]*)\s*\(/g;
   let match;
   while ((match = regex.exec(fileContent)) !== null) {
-    parsedMethodsSet.add(match[1]);
+    parsedMethodsSet.add(match[1] + '()');
   }
 
   const parsedMethodsArr = Array.from(parsedMethodsSet)

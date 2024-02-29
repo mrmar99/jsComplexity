@@ -8,6 +8,7 @@
     "effector-react": "^23.1.0",
     "fs": "^0.0.1-security",
     "markdown-to-jsx": "^7.4.1",
+    "nanoid": "^5.0.6",
     "parse-md": "^3.0.3",
     "path": "^0.12.7",
     "react": "^18.2.0",

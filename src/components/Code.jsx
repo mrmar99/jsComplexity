@@ -1,8 +1,14 @@
 import React, { useState } from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import {
+  Prism as SyntaxHighlighter,
+  createElement,
+} from "react-syntax-highlighter";
 import { vscDarkPlus as codeStyle } from "react-syntax-highlighter/dist/esm/styles/prism";
 import styled from "styled-components";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import { useUnit } from "effector-react";
+import $store from "../store";
+import { nanoid } from "nanoid";
 
 const PreContainer = styled.div`
   margin: 1.5rem 0 !important;
@@ -32,11 +38,11 @@ const CopyButton = styled.button`
   border: 1px solid var(--main-color);
   color: var(--main-color);
   opacity: 0.6;
-  transition: opacity .1s ease-in;
+  transition: opacity 0.1s ease-in;
 
   &:hover {
     opacity: 1;
-    transition: opacity .1s ease-out;
+    transition: opacity 0.1s ease-out;
   }
 `;
 
@@ -65,14 +71,30 @@ const PreBlock = styled(SyntaxHighlighter)`
     line-height: 0.7 !important;
   }
 
-  code span .line-number {
+  code span.line-number {
     padding-right: 1rem !important;
+  }
+
+  code a {
+    font-size: 16px;
   }
 `;
 
 const Code = ({ children, ...props }) => {
+  const store = useUnit($store);
+  const { items, language } = store;
+
+  const ECMAScriptSlug = "ECMAScript";
+
+  const { item } = props;
+  const parsedMethods = new Set(item.parsedMethods);
+  const ECMAScriptMethods = new Set(
+    Object.values(items[language][ECMAScriptSlug]).map((v) => v.title)
+  );
+
   const { className: preClassName, children: preChildren } = children.props;
-  const language = (preClassName && preClassName.replace("lang-", "")) || "";
+  const syntaxLanguage =
+    (preClassName && preClassName.replace("lang-", "")) || "";
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
@@ -80,12 +102,47 @@ const Code = ({ children, ...props }) => {
     setTimeout(() => setCopied(false), 2000);
   };
 
+  const traverseRow = (row, prev) => {
+    if (row.type === "element") {
+      if (row.children && row.children.length > 0) {
+        row.children.forEach((child) => {
+          traverseRow(child, row);
+        });
+      }
+    } else if (row.type === "text") {
+      const method = row.value + '()';
+
+      if (parsedMethods.has(method) && ECMAScriptMethods.has(method)) {
+        prev.tagName = "a";
+        prev.properties = {
+          ...prev.properties,
+          href: `/${ECMAScriptSlug}/${method}`,
+          title: `ECMAScript ${method}`
+        };
+      }
+    }
+  };
+
+  const rowRenderer = (row, stylesheet, useInlineStyles) => {
+    traverseRow(row, row);
+
+    return createElement({
+      node: row,
+      stylesheet,
+      useInlineStyles,
+      key: nanoid(),
+    });
+  };
+
+  const renderer = ({ ...props }) => {
+    const { rows, stylesheet, useInlineStyles } = props;
+    return rows.map((row) => rowRenderer(row, stylesheet, useInlineStyles));
+  };
+
   return (
     <PreContainer>
       <CopyBlock>
-        <Language>
-          {language}
-        </Language>
+        <Language>{syntaxLanguage}</Language>
         <CopyToClipboard text={preChildren} onCopy={handleCopy}>
           <CopyButton>{copied ? "Copied!" : "Copy"}</CopyButton>
         </CopyToClipboard>
@@ -93,8 +150,10 @@ const Code = ({ children, ...props }) => {
       <PreBlock
         {...props}
         children={preChildren}
-        language={language}
+        language={syntaxLanguage}
         style={codeStyle}
+        renderer={renderer}
+        wrapLongLines
       />
     </PreContainer>
   );

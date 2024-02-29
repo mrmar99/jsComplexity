@@ -14,12 +14,10 @@ const Home = () => {
       <Navbar type="home" />
       {
         dataStructures && Object.keys(dataStructures).map((ds) => {
-          const title = ds.charAt(0).toUpperCase() + ds.slice(1);
-
           return (
             <DataStructure 
               key={ds}
-              title={title} 
+              title={ds} 
               dataStructures={dataStructures}
             />
           )

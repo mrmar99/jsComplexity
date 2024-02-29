@@ -131,7 +131,8 @@ const ItemDescription = () => {
   const { ds, itemid } = useParams();
   const store = useUnit($store);
   const { items, language } = store;
-  const item = items[language][ds][`${ds}/${itemid}`];
+  const slug = `${ds}/${itemid}`;
+  const item = items[language][ds][slug];
 
   const { title, content, tc, sc, deprecated, esLink } = item;
 
@@ -177,7 +178,8 @@ const ItemDescription = () => {
                 overrides: {
                   pre: {
                     component: Code,
-                  },
+                    props: { item }
+                  }
                 },
               }}
             >
